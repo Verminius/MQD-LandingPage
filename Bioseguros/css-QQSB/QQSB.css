@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  background-image: url(https://i.postimg.cc/NFJ75pdJ/fondo-animado.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 5rem;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 100vw;
+  height: 90.9vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container-index {
+  align-items: center;
+  justify-content: center;
+}
+
+.container-puntajes {
+  align-items: center;
+  justify-content: center;
+}
+
+.container-end {
+  align-items: center;
+  justify-content: center;
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  width: 80vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 25px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+  padding: 2rem 3rem;
+}
+
+.logo-bolivar {
+  background: white;
+  border-radius: 0 0 30px 30px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo-QQSB {
+  width: 525px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-QQSB img {
+  width: 75%;
+  height: 80%;
+}
+
+.btn {
+  font-size: 2.4rem;
+  padding: 1.5rem 0;
+  width: 30rem;
+  text-align: center;
+  margin: 1rem 0.5rem;
+  text-decoration: none;
+  color: rgb(16, 36, 7);
+  background: linear-gradient(#40ca77, #008c44);
+  border-radius: 5rem;
+  border: 2px solid white;
+}
+
+.contenedor-botones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.menu a {
+  font-size: 2.2rem;
+}
+
+.btn:hover {
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(154, 244, 8, 0.6);
+  transition: transform 150ms;
+  transform: scale(1.01);
+  border: 4px solid white;
+}
+
+/* MODAL  */
+.instrucciones-container {
+  width: 98vw;
+  height: 98vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.mostrar {
+  visibility: visible;
+}
+
+.modal-contenedor {
+  width: 50vw;
+  height: 700px;
+  background: rgba(32, 32, 32, 0.9);
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+
+.show-instrucciones {
+  transform: scale(1);
+}
+
+.margen-modal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 670px;
+  width: 95%;
+  border: 3px solid #008c44;
+  border-radius: 15px;
+}
+
+.tittle-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  margin: 0;
+}
+
+.tittle-section h1 {
+  font-style: italic;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.tittle-section i {
+  color: #ffdc5d;
+  font-size: 3rem;
+  padding-right: 50px;
+  transition: all 0.3s;
+  transform: scaleX(1);
+}
+
+.tittle-section i:hover {
+  color: #40ca77;
+  transform: scale(1.1);
+}
+
+.tittle-section i:active {
+  color: #008c44;
+  transform: scale(0.9);
+}
+
+.contenido-instrucciones {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-top: 2px solid #008c44;
+}
+
+.instruccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+}
+
+.texto-instruccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  padding: 0.6rem 5rem;
+}
+
+.texto-instruccion p {
+  font-size: 1.3rem;
+  color: white;
+  font-style: normal;
+  text-align: center;
+}
+
+.imagen-instruccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 25%;
+}
+
+.imagen-instruccion img {
+  height: 80px;
+}
+
+@media (max-width: 1300px) {
+  .modal-container {
+    width: 75vw;
+  }
+
+  .instruccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  .texto-instruccion p {
+    font-size: 1rem;
+    color: white;
+    font-style: normal;
+    text-align: center;
+  }
+
+  .imagen-instruccion {
+    height: 50%;
+  }
+
+  .imagen-instruccion img {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .modal-contenedor {
+    width: 90%;
+  }
+}
+
+/* FIN MODAL*/
+
+.btn[disabled]:hover {
+  background: rgb(165, 165, 165);
+  color: gray;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#highscore-btn {
+  background: linear-gradient(yellow, #ffdc5d);
+}
+
+/*End*/
+
+.end-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(154, 244, 8, 0.6);
+}
+
+input::placeholder {
+  color: grey;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#username {
+  margin-bottom: 3rem;
+  width: 100%;
+  outline: none;
+}
+
+#end-text {
+  font-size: 2.4rem;
+  color: white;
+  text-align: center;
+}
+
+#saveScoreBtn {
+  border: none;
+}
+
+.game {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

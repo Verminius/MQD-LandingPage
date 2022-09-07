@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concentrese │ 100% Bioseguros</title>
+    <link rel="stylesheet" href="/Bioseguros/concentrese_css/raiz-c.css" />
+    <link rel="stylesheet" href="/Bioseguros/concentrese_css/concentrese.css" />
+    <link
+      rel="shortcut icon"
+      href="https://i.postimg.cc/65r8wRLs/Favicon-100.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/32bb34e7d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header>
+      <div class="logos">
+        <div class="logo-100">
+          <img src="https://i.postimg.cc/0Q8Jq79V/Logo-100-QQSB.png" alt="" />
+        </div>
+        <div class="logo-bolivar">
+          <img
+            src="https://i.postimg.cc/0jjMzxMm/Logo-bolivar-QQSB.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+
+    <!--MODALES-->
+
+    <div class="contenedor-end" id="container-end">
+      <div class="modal" id="end">
+        <div class="titulo-end">
+          <h2>Fin del Juego</h2>
+        </div>
+        <div class="pregunta">
+          <h4 class="subtittle">
+            ¡Lo lograste!, eres un experto en bioseguridad
+          </h4>
+        </div>
+        <div class="botones-end">
+          <div class="boton-end">
+            <a href="/Bioseguros/concentrese.html"
+              ><input type="button" value="SALIR"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor-modal" id="container">
+      <div class="modal" id="showed">
+        <div class="titulopregunta">
+          <h2>Pregunta:</h2>
+          <button class="close"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="imagen-modal">
+          <img
+            class="question-img"
+            src="https://i.postimg.cc/fRrHyTV7/caneca-blanca.jpg"
+            alt=""
+          />
+        </div>
+        <div class="pregunta">
+          <p class="question-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <!--TABLERO-->
+
+    <div class="contenedor-tablero">
+      <div class="tablero" id="tablero">
+        <div class="mesa" data-name="caneca-blanca">
+          <img
+            class="front"
+            src="https://i.postimg.cc/fRrHyTV7/caneca-blanca.jpg"
+            alt="caneca_blanca"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="caneca-blanca">
+          <img
+            class="front"
+            src="https://i.postimg.cc/fRrHyTV7/caneca-blanca.jpg"
+            alt="caneca-blanca"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="caneca-negra">
+          <img
+            class="front"
+            src="https://i.postimg.cc/Y9cbNnfh/caneca-negra.jpg"
+            alt="caneca-negra"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="caneca-negra">
+          <img
+            class="front"
+            src="https://i.postimg.cc/Y9cbNnfh/caneca-negra.jpg"
+            alt="caneca-negra"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="caneca-roja">
+          <img
+            class="front"
+            src="https://i.postimg.cc/5207fF2N/caneca-roja.jpg"
+            alt="caneca-roja"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="caneca-roja">
+          <img
+            class="front"
+            src="https://i.postimg.cc/5207fF2N/caneca-roja.jpg"
+            alt="caneca-roja"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="deposito">
+          <img
+            class="front"
+            src="https://i.postimg.cc/gJv4gVN4/deposito-rojo.jpg"
+            alt="deposito"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="deposito">
+          <img
+            class="front"
+            src="https://i.postimg.cc/gJv4gVN4/deposito-rojo.jpg"
+            alt="deposito"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="EPP_alturas">
+          <img
+            class="front"
+            src="https://i.postimg.cc/8c44S186/EPP-alturas.jpg"
+            alt="EPP_alturas"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="EPP_alturas">
+          <img
+            class="front"
+            src="https://i.postimg.cc/8c44S186/EPP-alturas.jpg"
+            alt="EPP_alturas"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="EPP_residuos">
+          <img
+            class="front"
+            src="https://i.postimg.cc/FFVDcxfH/EPP-residuos.jpg"
+            alt="EPP_residuos"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="EPP_residuos">
+          <img
+            class="front"
+            src="https://i.postimg.cc/FFVDcxfH/EPP-residuos.jpg"
+            alt="EPP_residuos"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="frascos">
+          <img
+            class="front"
+            src="https://i.postimg.cc/gkMstkH9/frascos.jpg"
+            alt="frascos"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="frascos">
+          <img
+            class="front"
+            src="https://i.postimg.cc/gkMstkH9/frascos.jpg"
+            alt="frascos"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="material_medico">
+          <img
+            class="front"
+            src="https://i.postimg.cc/Z5p9BwRf/material-medico.jpg"
+            alt="material_medico"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="material_medico">
+          <img
+            class="front"
+            src="https://i.postimg.cc/Z5p9BwRf/material-medico.jpg"
+            alt="material_medico"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="quimicos">
+          <img
+            class="front"
+            src="https://i.postimg.cc/FzYz9Z8V/quimicos.jpg"
+            alt="quimicos"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="quimicos">
+          <img
+            class="front"
+            src="https://i.postimg.cc/FzYz9Z8V/quimicos.jpg"
+            alt="quimicos"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="quirurgico">
+          <img
+            class="front"
+            src="https://i.postimg.cc/8cx5svVQ/quirurgico.jpg"
+            alt="quirurgico"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="quirurgico">
+          <img
+            class="front"
+            src="https://i.postimg.cc/8cx5svVQ/quirurgico.jpg"
+            alt="quirurgico"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="residuos_negra">
+          <img
+            class="front"
+            src="https://i.postimg.cc/3rqWts0S/residuos-negra.jpg"
+            alt="residuos_negra"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="residuos_negra">
+          <img
+            class="front"
+            src="https://i.postimg.cc/3rqWts0S/residuos-negra.jpg"
+            alt="residuos_negra"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="residuos_roja">
+          <img
+            class="front"
+            src="https://i.postimg.cc/kXtGzTxn/residuos-roja.jpg"
+            alt="residuos_roja"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+        <div class="mesa" data-name="residuos_roja">
+          <img
+            class="front"
+            src="https://i.postimg.cc/kXtGzTxn/residuos-roja.jpg"
+            alt="residuos_roja"
+          />
+          <img
+            class="back"
+            src="https://i.postimg.cc/Mp7TKXPN/tarjeta-reverso.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="status" id="status">
+      <div class="container">
+        <div class="puntaje"><span id="mov">00</span> movimientos</div>
+      </div>
+      <div class="volver">
+        <a href="/Bioseguros/concentrese.html"
+          ><input type="button" value="VOLVER"
+        /></a>
+      </div>
+    </footer>
+
+    <!--SCRIPTS-->
+    <script src="/Bioseguros/js/main-c.js"></script>
+  </body>
+</html>
