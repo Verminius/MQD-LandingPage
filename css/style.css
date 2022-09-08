@@ -563,7 +563,7 @@ body {
   }
 
   .text-video {
-    width: 400px;
+    width: 355px;
     text-align: center;
     padding: 5px;
     height: 170px;
@@ -582,11 +582,11 @@ body {
   }
 
   .mapa img {
-    width: 370px;
+    width: 355px;
   }
 
   .formulario {
-    width: 370px;
+    width: 355px;
     margin-bottom: 40px;
     padding: 0;
     margin: 0;
