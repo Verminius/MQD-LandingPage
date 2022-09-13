@@ -23,6 +23,7 @@ closeModal.addEventListener("click", () => {
 
 disenoBtn.addEventListener("click", () => {
     modal.classList.add("show-modal");
+
 })
 
 digitalBtn.addEventListener("click", () => {
