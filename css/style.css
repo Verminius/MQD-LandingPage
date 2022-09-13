@@ -329,6 +329,24 @@ body {
   transform: scale(1);
 }
 
+.btn-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  font-weight: 500;
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--green);
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.btn-sec i {
+  color: var(--green);
+}
+
 .btn i {
   color: var(--beige);
 }
@@ -336,9 +354,21 @@ body {
 .btn:hover {
   background: var(--green);
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .btn:active {
+  transform: scale(0.98);
+}
+
+.btn-sec:hover {
+  font-weight: 700;
+  transition: all 0.3s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.btn-sec:active {
   transform: scale(0.98);
 }
 
