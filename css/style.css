@@ -270,7 +270,12 @@ body {
     background: #FFFFFF;
     border-radius: 30px;
     box-shadow: 4px 4px 35px rgba(168, 195, 21, 0.49);
-    transition: all 0.3s;
+    transition: all 0.5s;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.show-modal {
     transform: scale(1);
     opacity: 1;
 }
@@ -317,7 +322,7 @@ body {
     width: 574px;
     height: 58px;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -335,6 +340,24 @@ body {
     transform: scale(1);
 }
 
+.btn-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    font-weight: 500;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--green);
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.btn-sec i {
+    color: var(--green);
+}
+
 .btn i {
     color: var(--beige);
 }
@@ -342,9 +365,21 @@ body {
 .btn:hover {
     background: var(--green);
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .btn:active {
+    transform: scale(0.98);
+}
+
+.btn-sec:hover {
+    font-weight: 700;
+    transition: all 0.3s;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.btn-sec:active {
     transform: scale(0.98);
 }
 
