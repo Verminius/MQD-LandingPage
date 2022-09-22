@@ -262,3 +262,12 @@ input::placeholder {
 #finalScore {
   margin-bottom: 1rem;
 }
+
+@media (min-width: 450px) and (max-width: 600px) {
+  .header {
+    width: 90%;
+  }
+  .footer {
+    width: 97%;
+  }
+}
