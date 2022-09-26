@@ -81,4 +81,25 @@ body {
     left: 0px;
     top: -15px;
   }
+
+  .shield img {
+    height: 90px;
+  }
+
+  #progressBar {
+    width: 12rem;
+  }
+
+  .hud-prefix {
+    font-size: 1.3rem;
+  }
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
 }

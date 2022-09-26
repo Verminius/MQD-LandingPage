@@ -263,11 +263,22 @@ input::placeholder {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 450px) and (max-width: 600px) {
+@media (min-width: 360px) and (max-width: 600px) {
   .header {
-    width: 90%;
+    width: 95%;
   }
+
+  .shield {
+    position: absolute;
+    left: 0px;
+    top: -15px;
+  }
+
+  .shield img {
+    height: 90px;
+  }
+
   .footer {
-    width: 97%;
+    width: 98%;
   }
 }
