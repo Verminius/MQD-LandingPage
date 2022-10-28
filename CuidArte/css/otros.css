@@ -1,0 +1,42 @@
+.img {
+  height: 630px;
+  width: 450px;
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  grid-template-rows: repeat(22, 1fr);
+}
+
+.marca1 {
+  grid-area: 12/7/14/10;
+}
+.marca2 {
+  grid-area: 14/10/16/12;
+}
+.marca3 {
+  grid-area: 3/14/5/17;
+}
+.marca4 {
+  grid-area: 2/13/5/15;
+}
+.marca5 {
+  grid-area: 1/3/4/6;
+}
+.marca6 {
+  grid-area: 3/4/5/6;
+}
+.marca7 {
+  grid-area: 19/11/21/13;
+}
+.marca8 {
+  grid-area: 14/14/16/17;
+}
+.marca9 {
+  grid-area: 3/11/5/14;
+}
+.marca10 {
+  grid-area: 6/15/8/18;
+}

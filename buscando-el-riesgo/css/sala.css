@@ -1,0 +1,105 @@
+.tablero {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 90px;
+  width: 1280px;
+  height: 720px;
+  box-shadow: -8px 8px 0 var(--greytransp);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.clue-container {
+  position: absolute;
+  width: 450px;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: all 0.5s ease;
+  transform: translateX(417px);
+}
+
+.show-btn {
+  padding: 20px 7px;
+  background: var(--white);
+  border-radius: 10px 0 0 10px;
+  box-shadow: -4px 4px 0 var(--greytransp);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.show-text {
+  writing-mode: vertical-lr;
+  color: var(--verde6);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 650px;
+  width: 96%;
+  background: var(--white);
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: -4px 4px 0 var(--greytransp);
+}
+
+.show {
+  transform: translateX(0px);
+}
+
+.marca1 {
+  grid-area: 15/20/18/23;
+}
+
+.marca2 {
+  grid-area: 7/17/10/20;
+}
+
+.marca3 {
+  grid-area: 10/6/13/9;
+}
+
+.marca4 {
+  grid-area: 18/20/20/22;
+}
+
+.marca5 {
+  grid-area: 14/30/17/33;
+}
+
+.marca6 {
+  grid-area: 11/26/14/29;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1400px) {
+  /* Tablero */
+
+  .tablero {
+    top: 50px;
+    width: 977.49px;
+    height: 550px;
+  }
+
+  .grid {
+    width: 100%;
+    height: 100%;
+  }
+
+  .clue-container {
+    height: 510px;
+  }
+
+  .texto {
+    height: 510px;
+  }
+}

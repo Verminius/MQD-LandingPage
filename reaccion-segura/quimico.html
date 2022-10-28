@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reaccion Segura</title>
+  <link
+      rel="shortcut icon"
+      href="/reaccion-segura/img/favicon.png"
+      type="image/x-icon"
+    />
+  <script src="https://kit.fontawesome.com/32bb34e7d2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/reaccion-segura/css/style.css">
+</head>
+<body>
+  <!-- Menu desplegable -->
+  <div class="container" id="desplegable">
+    <div class="cta-desplegar" id="btnDesp">
+      <i class="fa-solid fa-circle-question"></i> 
+    </div>
+    <div class="menu-cont">
+      <div class="tittle-menu">
+        <h3>Sustancias</h2>
+        <i class="fa-solid fa-xmark close" id="close"></i>
+      </div>
+      <div class="content-menu">
+        <div class="image-menu">
+          <img src="/reaccion-segura/img/explosivo.png" alt="" class="img">
+          <img src="/reaccion-segura/img/gas-infla.png" alt="" class="img">
+          <img src="/reaccion-segura/img/gas-comp.png" alt="" class="img">
+          <img src="/reaccion-segura/img/gas-toxic.png" alt="" class="img">
+          <img src="/reaccion-segura/img/liquid-infla.png" alt="" class="img">
+          <img src="/reaccion-segura/img/comburente.png" alt="" class="img">
+          <img src="/reaccion-segura/img/corrosivo.png" alt="" class="img">
+          <img src="/reaccion-segura/img/combustion.png" alt="" class="img">
+        </div>
+        <div class="text-menu">
+          <p class="text" >Explosivo</p>
+          <p class="text" >Gas inflamable</p>
+          <p class="text" >Gas comprimido</p>
+          <p class="text" >Gas tóxico</p>
+          <p class="text" >Líquido inflamable</p>
+          <p class="text" >Comburente</p>
+          <p class="text" >Corrosivo</p>
+          <p class="text" >Combustión expontánea</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tablero -->
+  <div class="blur">
+    <canvas id="viewport" width="628" height="628"></canvas>
+  </div>
+
+  <!-- Scripts -->
+
+   <script src="/reaccion-segura/js/quimico.js"></script>
+   <script src="/reaccion-segura/js/modal.js"></script>
+</body>
+</html>

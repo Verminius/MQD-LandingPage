@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CuidArte</title>
+    <link rel="icon" href="/CuidArte/img/favicon.svg" />
+    <link rel="stylesheet" href="/CuidArte/css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/32bb34e7d2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body id="body" class="portada">
+    <!--Instrucciones-->
+
+    <div class="contenedor-body" id="bg">
+      <div class="contenedor-instrucciones" id="caja-instrucciones">
+        <div class="header-modal">
+          <div class="titulo">
+            <h2>instrucciones</h2>
+          </div>
+          <div class="cerrar" id="cerrar">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <div class="instrucciones_modal">
+          <!--instruccion 1-->
+
+          <div class="guion guion1">1</div>
+          <div class="inst inst1">Selecciona la estación que desees jugar.</div>
+          <div class="img1"><img src="/CuidArte/img/botones.png" alt="" /></div>
+          <!--instruccion 2-->
+
+          <div class="guion guion2">2</div>
+          <div class="inst inst2">
+            Lee las pistas y encuentra los riesgos dando click en el mapa.
+          </div>
+          <div class="img2">
+            <img src="/CuidArte/img/mapa_muestra.png" alt="" />
+          </div>
+          <!--instruccion 3-->
+
+          <div class="guion guion3">3</div>
+          <div class="inst inst3">
+            Los riesgos encontrados se marcarán en el mapa
+          </div>
+          <div class="img3"><img src="/CuidArte/img/check.png" alt="" /></div>
+          <!--instruccion 4-->
+
+          <div class="guion guion4">4</div>
+          <div class="inst inst4">
+            Al finalizar podrás volver al menú principal.
+          </div>
+          <div class="img4"><img src="/CuidArte/img/volver.png" alt="" /></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Header-->
+
+    <header class="header">
+      <div class="contenedor-bolivar" id="bolivar">
+        <img src="/CuidArte/img/logoBolivarSI.png" alt="" />
+      </div>
+      <div class="compania">
+        <img src="/CuidArte/img/compañia-blanco.png" alt="" />
+      </div>
+    </header>
+
+    <!--Cuerpo-->
+    <main class="logo" id="logo">
+      <img src="/CuidArte/img/cuidarte-grande.png" alt="" />
+    </main>
+
+    <!--Menú-->
+    <footer class="footer">
+      <div class="vigilado">
+        <img src="/CuidArte/img/vigilado-blanco.png" alt="" />
+      </div>
+
+      <!--Menú Mapas-->
+      <div class="mapas">
+        <div class="btn button" id="btn-servicio">
+          <img class="" src="/CuidArte/img/servicios-logo.png" alt="" />
+        </div>
+        <div class="btn button" id="btn-caliente" onclick="disCaliente();">
+          <img class="" src="/CuidArte/img/caliente-logo.png" alt="" />
+        </div>
+        <div class="btn button" id="btn-fria">
+          <img class="" src="/CuidArte/img/fria-logo.png" alt="" />
+        </div>
+        <div class="btn button" id="btn-otros">
+          <img class="" src="/CuidArte/img/otros-logo.png" alt="" />
+        </div>
+      </div>
+
+      <!--Boton Instrucciones-->
+      <div class="instrucciones">
+        <div class="btn button2" id="instrucciones">
+          <div class="label">instrucciones</div>
+        </div>
+      </div>
+    </footer>
+    <script src="/CuidArte/js/index.js"></script>
+    <script src="/CuidArte/js/instrucciones.js"></script>
+  </body>
+</html>

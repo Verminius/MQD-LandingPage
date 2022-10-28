@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+
+:root {
+  --verde: #009056;
+  --amarillo: #ffe16f;
+  --rojo: #bf4659;
+  --verde1: #b3ce1c;
+  --verde2: #01ce38;
+  --verde3: #71c93e;
+  --verde4: #3eaa59;
+  --verde5: #369852;
+  --verde6: #006d38;
+  --verdeClaro1: #d0eed6;
+  --verdeClaro2: #80e3c4;
+  --verdeClaro3: #00b889;
+  --verdeClaro4: #08ca6b;
+  --gris1: #686868;
+  --gris2: #cccccc;
+  --black: #2b2b2b;
+  --white: #ffffff;
+  --greytransp: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/buscando-el-riesgo/img/game-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* HEADER */
+.header-cont {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.logo-juego {
+  height: 100px;
+  margin-left: 30px;
+  margin-top: 5px;
+  filter: drop-shadow(3px 4px 0 var(--greytransp));
+}
+
+/* MODAL */
+
+.contenedor-modal {
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.opacity {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  background-color: var(--white);
+  padding: 20px 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -3px 3px 0 var(--greytransp);
+  transition: all 0.5s;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.show-modal {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-tittle {
+  margin-bottom: 20px;
+  color: var(--verde);
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--verde1);
+}
+
+.modal-tittle h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.modal-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  margin: 10px 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--verde3);
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white);
+  box-shadow: -2px 2px 0 var(--verde5);
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.btn:hover {
+  background-color: var(--verde6);
+  font-weight: 900;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+/* JUEGO */
+
+.grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(47, 1fr);
+  grid-template-rows: repeat(25, 1fr);
+  z-index: 0;
+}
+
+.circulo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-self: center;
+  width: 60px;
+  height: 60px;
+}
+
+.front {
+  background: rgba(50, 50, 50, 0);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.3s;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  align-self: center;
+  justify-self: center;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: rotateY(-180deg);
+  backface-visibility: hidden;
+  background: var(--verde);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.back::selection {
+  background: transparent;
+}
+
+.descubierto {
+  transform: rotateY(-180deg);
+}
+
+.img-container {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.img-container img {
+  width: 101%;
+  height: auto;
+}
+
+/*  Pistas  */
+
+.encabezado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: var(--verde);
+  text-align: center;
+}
+
+.title h2 {
+  text-align: center;
+}
+
+.pista {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0.5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.contenedor_pistas {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 98%;
+  height: 79%;
+  overflow: auto;
+  margin-right: 20px;
+  padding: 5px;
+  border-top: 1px solid var(--verde);
+}
+
+.contenedor_pistas::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contenedor_pistas::-webkit-scrollbar-thumb {
+  background-color: var(--verde);
+  border-radius: 5px;
+}
+
+.marcador {
+  position: relative;
+  margin: 0.3rem;
+  width: 25px;
+  height: 25px;
+}
+
+.inactivo {
+  width: 100%;
+  height: 100%;
+  background: var(--gris2);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.acertado {
+  background: var(--verde);
+}
+
+.textos {
+  width: 80%;
+  padding: 8px;
+  margin: 1px;
+  font-size: 0.83rem;
+  letter-spacing: 0.4px;
+}
+
+/* FOOTER */
+.footer-index {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bolivar {
+  width: 180px;
+  z-index: 99;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1400px) {
+  /*logo*/
+  .header-cont {
+    height: 5%;
+  }
+
+  .logo-juego {
+    height: 40px;
+  }
+}

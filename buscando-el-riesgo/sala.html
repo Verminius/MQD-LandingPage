@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscando el Riesgo | Sala</title>
+    <script
+      src="https://kit.fontawesome.com/32bb34e7d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/buscando-el-riesgo/css/tablero.css" />
+    <link rel="stylesheet" href="/buscando-el-riesgo/css/sala.css" />
+
+    <link
+      rel="shortcut icon"
+      href="/buscando-el-riesgo/img/favicon.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header-cont">
+      <img
+        src="/buscando-el-riesgo/img/logo-animado.gif"
+        alt=""
+        class="logo-juego"
+      />
+    </div>
+
+    <!-- MODAL -->
+
+    <div class="contenedor-modal" id="contModal">
+      <div class="modal" id="modal">
+        <div class="modal-tittle">
+          <h1>¡Excelente!</h1>
+        </div>
+        <div class="modal-btn">
+          <a class="btn" href="/buscando-el-riesgo/inicio.html">Inicio</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABLERO -->
+    <div class="tablero">
+      <!-- Pistas -->
+      <div class="clue-container" id="modalPistas">
+        <div class="show-btn" id="showBtn">
+          <p class="show-text">Pistas</p>
+        </div>
+        <div class="texto">
+          <div class="encabezado">
+            <div class="tittle">
+              <h2>Sala</h2>
+            </div>
+          </div>
+
+          <div class="contenedor_pistas">
+            <div class="pista">
+              <div class="marcador">
+                <div class="inactivo" id="acierto1"></div>
+              </div>
+              <p class="textos">
+                Si con un buen espacio quieres contar, la mesa redonda al Rey
+                Arturo debes dejar.
+              </p>
+            </div>
+
+            <div class="pista">
+              <div class="marcador">
+                <div class="inactivo" id="acierto2"></div>
+              </div>
+              <p class="textos">
+                Si jorobado no quieres estar, una silla ergonómica debes usar.
+              </p>
+            </div>
+            <div class="pista">
+              <div class="marcador">
+                <div class="inactivo" id="acierto3"></div>
+              </div>
+              <p class="textos">
+                Si perdido no quieres estar, una buena planeación debes
+                realizar.
+              </p>
+            </div>
+            <div class="pista">
+              <div class="marcador">
+                <div class="inactivo" id="acierto4"></div>
+              </div>
+              <p class="textos">
+                Los platos sucios debes retirar, si luego no quieres limpiar.
+              </p>
+            </div>
+            <div class="pista">
+              <div class="marcador">
+                <div class="inactivo" id="acierto5"></div>
+              </div>
+              <p class="textos">
+                Si lesionado no quieres estar, con las barandas debes contar.
+              </p>
+            </div>
+            <div class="pista">
+              <div class="marcador">
+                <div class="inactivo" id="acierto6"></div>
+              </div>
+              <p class="textos">
+                Si a la vanguardia quieres estar, con una buena conexión debes
+                contar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IMAGEN Y MARCAS -->
+
+      <div class="grid">
+        <!-- Imagen -->
+        <div class="img-container">
+          <img src="/buscando-el-riesgo/img/01-tablero-sala.jpg" alt="" />
+        </div>
+
+        <!-- Marcas -->
+
+        <div class="circulo marca1" id="circulo">
+          <div class="front" id="front1">
+            <div class="back"><i class="fa-solid fa-check"></i></div>
+          </div>
+        </div>
+        <div class="circulo marca2" id="circulo">
+          <div class="front" id="front2">
+            <div class="back"><i class="fa-solid fa-check"></i></div>
+          </div>
+        </div>
+        <div class="circulo marca3" id="circulo">
+          <div class="front" id="front3">
+            <div class="back"><i class="fa-solid fa-check"></i></div>
+          </div>
+        </div>
+        <div class="circulo marca4" id="circulo">
+          <div class="front" id="front4">
+            <div class="back"><i class="fa-solid fa-check"></i></div>
+          </div>
+        </div>
+        <div class="circulo marca5" id="circulo">
+          <div class="front" id="front5">
+            <div class="back"><i class="fa-solid fa-check"></i></div>
+          </div>
+        </div>
+        <div class="circulo marca6" id="circulo">
+          <div class="front" id="front6">
+            <div class="back"><i class="fa-solid fa-check"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="footer-index">
+      <img
+        class="bolivar"
+        src="/buscando-el-riesgo/img/logo-bolivar-mosca-der.png"
+        alt=""
+      />
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="/buscando-el-riesgo/js/sala.js"></script>
+  </body>
+</html>

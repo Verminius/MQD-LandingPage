@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/reaccion-segura/img/fondo-quimico.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+canvas {
+  background-image: url(/reaccion-segura/img/bg-mesa.png);
+}
+
+/* Sustancias */
+
+.container {
+  display: inline;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.3s ease;
+  transform: translateX(360px);
+}
+
+.desplegado {
+  transform: translateX(0px);
+}
+
+.cta-desplegar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  background: #ffdc5d;
+  border-radius: 50px 0px 0px 50px;
+  cursor: pointer;
+}
+
+.cta-desplegar i {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 35px;
+  color: #008c44;
+}
+
+.menu-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 35px 50px 40px;
+  gap: 20px;
+  background: #eaeaea;
+  border-radius: 30px 0px 0px 30px;
+  width: 360px;
+  height: 847px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.tittle-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 42px;
+  gap: 20px;
+  width: 263px;
+  height: 90px;
+  border-bottom: 1px solid #adc90e;
+}
+
+.tittle-menu h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #008c44;
+}
+
+.close {
+  padding: 5px 7.5px;
+  background-color: #008c44;
+  border-radius: 30px;
+  color: white;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.content-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 25px;
+  width: 285px;
+  height: 677px;
+}
+
+.image-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 51px;
+  width: 40px;
+  height: 677px;
+}
+
+.text-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 68px;
+  width: 220px;
+  height: 660px;
+}
+
+.text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #008c44;
+}
+
+/* Tablero de Juego */
+
+.blur {
+  filter: drop-shadow(5px 6px 1px rgba(0, 0, 0, 0.3));
+}
+
+/* Media Query */
+
+@media screen and (max-width: 1300px) {
+  .container {
+    transition: all 0.3s ease;
+    transform: translateX(300px);
+  }
+
+  .desplegado {
+    transform: translateX(0px);
+  }
+
+  .menu-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 35px 50px 40px;
+    gap: 20px;
+    background: #eaeaea;
+    border-radius: 30px 0px 0px 30px;
+    width: 300px;
+    height: 707px;
+  }
+
+  .tittle-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 20px;
+    width: 209px;
+    height: 55px;
+    border-bottom: 1px solid #adc90e;
+  }
+
+  .tittle-menu h3 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #008c44;
+    text-align: left;
+  }
+
+  .close {
+    padding: 5px 7.5px;
+    background-color: #008c44;
+    border-radius: 30px;
+    color: white;
+  }
+
+  .close:hover {
+    cursor: pointer;
+  }
+
+  .content-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    width: 236px;
+    height: 551px;
+  }
+
+  .image-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 33px;
+    width: 40px;
+    height: 551px;
+  }
+
+  .text-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 54px;
+    width: 176px;
+    height: 530px;
+  }
+
+  .text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #008c44;
+  }
+}

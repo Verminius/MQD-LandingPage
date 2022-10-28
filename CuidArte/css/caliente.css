@@ -1,0 +1,63 @@
+.img {
+  height: 630px;
+  width: 450px;
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  grid-template-rows: repeat(22, 1fr);
+}
+
+.marca1 {
+  grid-area: 4/12/6/14;
+}
+.marca2 {
+  grid-area: 5/15/8/17;
+}
+.marca3 {
+  grid-area: 4/5/7/8;
+}
+.marca4 {
+  grid-area: 4/10/6/13;
+}
+.marca5 {
+  grid-area: 13/8/16/10;
+}
+.marca6 {
+  grid-area: 10/14/13/17;
+}
+.marca7 {
+  grid-area: 14/10/16/13;
+}
+.marca8 {
+  grid-area: 4/14/7/16;
+}
+.marca9 {
+  grid-area: 9/11/11/13;
+}
+.marca10 {
+  grid-area: 18/14/20/16;
+}
+.marca11 {
+  grid-area: 7/7/10/11;
+}
+.marca12 {
+  grid-area: 15/7/17/10;
+}
+.marca13 {
+  grid-area: 6/4/8/7;
+}
+.marca14 {
+  grid-area: 5/9/8/11;
+}
+.marca15 {
+  grid-area: 7/5/9/9;
+}
+.marca16 {
+  grid-area: 7/11/9/14;
+}
+.marca17 {
+  grid-area: 1/6/3/8;
+}
