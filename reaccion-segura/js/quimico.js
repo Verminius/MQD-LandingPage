@@ -513,13 +513,40 @@ window.onload = function () {
 
       if (cluster.length >= 3) {
         // Remove the cluster
+        document.querySelector("#sonido-acierto").play();
+
         setGameState(gamestates.removecluster);
         return;
       }
     }
 
     // No clusters found
+
     turncounter++;
+
+    //error animation
+    const errorBg = document.querySelector(".contenedor-body");
+    const errorMsg = document.querySelector(".error-msg");
+
+    if (turncounter <= 3) {
+      document.querySelector("#sonido-error").play();
+
+      errorBg.classList.add("error");
+      errorMsg.classList.add("error-msg-show");
+      setTimeout(() => {
+        errorBg.classList.remove("error");
+        errorMsg.classList.remove("error-msg-show");
+      }, 200);
+      setTimeout(() => {
+        errorBg.classList.add("error");
+        errorMsg.classList.add("error-msg-show");
+        setTimeout(() => {
+          errorBg.classList.remove("error");
+          errorMsg.classList.remove("error-msg-show");
+        }, 250);
+      }, 350);
+    }
+
     if (turncounter >= 3) {
       // Add a row of bubbles
       addBubbles();
@@ -906,7 +933,7 @@ window.onload = function () {
     var centery = player.y + level.tileheight / 2;
 
     // Draw player background circle
-    context.fillStyle = "#80e3c4";
+    context.fillStyle = "#ffe16f";
     context.beginPath();
     context.arc(centerx, centery, level.radius + 12, 0, 2 * Math.PI, false);
     context.fill();

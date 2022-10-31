@@ -18,10 +18,47 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
 }
 
-canvas {
-  background-image: url(/reaccion-segura/img/bg-mesa.png);
+.contenedor-body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(191, 70, 89, 0);
+  background-blend-mode: multiply;
+}
+
+.error {
+  background-color: rgba(191, 70, 89, 0.7);
+}
+
+/* Error */
+
+.error-msg {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  margin-left: 55px;
+  color: white;
+}
+
+.error-msg-show {
+  opacity: 1;
+}
+
+.error-msg h3 {
+  font-size: 35px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* sonidos */
+
+.sonido {
+  display: none;
 }
 
 /* Sustancias */
@@ -34,14 +71,14 @@ canvas {
   width: 500px;
   height: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   transition: all 0.3s ease;
-  transform: translateX(360px);
+  transform: translateX(385px);
 }
 
 .desplegado {
-  transform: translateX(0px);
+  transform: translateX(35px);
 }
 
 .cta-desplegar {
@@ -73,8 +110,6 @@ canvas {
   border-radius: 30px 0px 0px 30px;
   width: 360px;
   height: 847px;
-  visibility: hidden;
-  opacity: 0;
 }
 
 .tittle-menu {
@@ -159,11 +194,17 @@ canvas {
 @media screen and (max-width: 1300px) {
   .container {
     transition: all 0.3s ease;
-    transform: translateX(300px);
+    transform: translateX(355px);
+  }
+
+  .error-msg h3 {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
   }
 
   .desplegado {
-    transform: translateX(0px);
+    transform: translateX(65px);
   }
 
   .menu-cont {
