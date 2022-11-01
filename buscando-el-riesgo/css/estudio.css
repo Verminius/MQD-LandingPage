@@ -13,14 +13,14 @@
 
 .clue-container {
   position: absolute;
-  width: 450px;
+  width: 390px;
   height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
   transition: all 0.5s ease;
-  transform: translateX(417px);
+  transform: translateX(355px);
 }
 
 .show-btn {
@@ -44,7 +44,7 @@
   flex-direction: column;
   justify-content: space-around;
   height: 650px;
-  width: 96%;
+  width: 75%;
   background: var(--white);
   padding: 10px 20px;
   border-radius: 20px;
@@ -56,39 +56,39 @@
 }
 
 .marca1 {
-  grid-area: 7/16/9/20;
+  grid-area: 6/15/10/19;
 }
 
 .marca2 {
-  grid-area: 10/15/12/20;
+  grid-area: 9/15/13/20;
 }
 
 .marca3 {
-  grid-area: 14/4/16/6;
+  grid-area: 13/3/17/7;
 }
 
 .marca4 {
-  grid-area: 13/32/16/34;
+  grid-area: 12/31/16/35;
 }
 
 .marca5 {
-  grid-area: 13/9/15/11;
+  grid-area: 12/8/16/12;
 }
 
 .marca6 {
-  grid-area: 15/15/18/19;
+  grid-area: 15/15/19/19;
 }
 
 .marca7 {
-  grid-area: 10/27/13/29;
+  grid-area: 9/25/13/29;
 }
 
 .marca8 {
-  grid-area: 11/19/13/24;
+  grid-area: 10/19/14/24;
 }
 
 .marca9 {
-  grid-area: 19/21/21/23;
+  grid-area: 18/20/22/24;
 }
 
 /* Media Query */
@@ -108,7 +108,8 @@
   }
 
   .clue-container {
-    height: 510px;
+    width: 400px;
+    height: 400px;
   }
 
   .texto {
