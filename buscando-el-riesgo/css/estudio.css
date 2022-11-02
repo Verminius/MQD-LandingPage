@@ -3,7 +3,8 @@
   justify-content: flex-end;
   align-items: center;
   position: absolute;
-  top: 90px;
+  top: 50;
+  left: 50;
   width: 1280px;
   height: 720px;
   box-shadow: -8px 8px 0 var(--greytransp);
@@ -20,7 +21,7 @@
   align-items: center;
   z-index: 1;
   transition: all 0.5s ease;
-  transform: translateX(355px);
+  transform: translateX(350px);
 }
 
 .show-btn {
@@ -97,7 +98,8 @@
   /* Tablero */
 
   .tablero {
-    top: 50px;
+    top: 50;
+    left: 50;
     width: 977.49px;
     height: 550px;
   }

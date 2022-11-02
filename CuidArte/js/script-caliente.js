@@ -34,6 +34,8 @@ const flipCard17 = document.getElementById("front17");
 const acierto17 = document.getElementById("acierto17");
 const acierto = document.querySelector("#acierto");
 
+let showImage = document.querySelector("#showImage");
+
 let counter = 0;
 
 flipCard1.addEventListener("click", function descubrir() {
@@ -41,6 +43,16 @@ flipCard1.addEventListener("click", function descubrir() {
   acierto1.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/01Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard2.addEventListener("click", function descubrir() {
@@ -48,6 +60,16 @@ flipCard2.addEventListener("click", function descubrir() {
   acierto2.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/02Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard3.addEventListener("click", function descubrir() {
@@ -55,6 +77,16 @@ flipCard3.addEventListener("click", function descubrir() {
   acierto3.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/03Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard4.addEventListener("click", function descubrir() {
@@ -62,6 +94,16 @@ flipCard4.addEventListener("click", function descubrir() {
   acierto4.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/04Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard5.addEventListener("click", function descubrir() {
@@ -69,6 +111,16 @@ flipCard5.addEventListener("click", function descubrir() {
   acierto5.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/05Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard6.addEventListener("click", function descubrir() {
@@ -76,6 +128,16 @@ flipCard6.addEventListener("click", function descubrir() {
   acierto6.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/06Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard7.addEventListener("click", function descubrir() {
@@ -83,6 +145,16 @@ flipCard7.addEventListener("click", function descubrir() {
   acierto7.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/07Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard8.addEventListener("click", function descubrir() {
@@ -90,6 +162,16 @@ flipCard8.addEventListener("click", function descubrir() {
   acierto8.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/08Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard9.addEventListener("click", function descubrir() {
@@ -97,6 +179,16 @@ flipCard9.addEventListener("click", function descubrir() {
   acierto9.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/09Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard10.addEventListener("click", function descubrir() {
@@ -104,6 +196,16 @@ flipCard10.addEventListener("click", function descubrir() {
   acierto10.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/10Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard11.addEventListener("click", function descubrir() {
@@ -111,6 +213,16 @@ flipCard11.addEventListener("click", function descubrir() {
   acierto11.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/11Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard12.addEventListener("click", function descubrir() {
@@ -118,6 +230,16 @@ flipCard12.addEventListener("click", function descubrir() {
   acierto12.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/12Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard13.addEventListener("click", function descubrir() {
@@ -125,6 +247,16 @@ flipCard13.addEventListener("click", function descubrir() {
   acierto13.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/13Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard14.addEventListener("click", function descubrir() {
@@ -132,6 +264,16 @@ flipCard14.addEventListener("click", function descubrir() {
   acierto14.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/14Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard15.addEventListener("click", function descubrir() {
@@ -139,6 +281,16 @@ flipCard15.addEventListener("click", function descubrir() {
   acierto15.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/15Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard16.addEventListener("click", function descubrir() {
@@ -146,6 +298,16 @@ flipCard16.addEventListener("click", function descubrir() {
   acierto16.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/16Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard17.addEventListener("click", function descubrir() {
@@ -153,6 +315,16 @@ flipCard17.addEventListener("click", function descubrir() {
   acierto17.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/caliente/17Caliente.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 //Fin del Juego
@@ -165,11 +337,11 @@ function endGame() {
     setTimeout(() => {
       bg.style.opacity = "1";
       bg.style.visibility = "visible";
-    }, 400);
+    }, 1500);
 
     setTimeout(() => {
       modal.style.transform = "scale(1)";
       modal.style.opacity = "1";
-    }, 700);
+    }, 2000);
   }
 }

@@ -20,6 +20,8 @@ const flipCard10 = document.getElementById("front10");
 const acierto10 = document.getElementById("acierto10");
 const acierto = document.querySelector("#acierto");
 
+let showImage = document.querySelector("#showImage");
+
 let counter = 0;
 
 flipCard1.addEventListener("click", function descubrir() {
@@ -27,6 +29,16 @@ flipCard1.addEventListener("click", function descubrir() {
   acierto1.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/servicios/01Servicios.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard2.addEventListener("click", function descubrir() {
@@ -34,6 +46,16 @@ flipCard2.addEventListener("click", function descubrir() {
   acierto2.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/servicios/02Servicios.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard3.addEventListener("click", function descubrir() {
@@ -41,6 +63,16 @@ flipCard3.addEventListener("click", function descubrir() {
   acierto3.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/servicios/03Servicios.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard4.addEventListener("click", function descubrir() {
@@ -48,6 +80,16 @@ flipCard4.addEventListener("click", function descubrir() {
   acierto4.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/servicios/04Servicios.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard5.addEventListener("click", function descubrir() {
@@ -55,6 +97,16 @@ flipCard5.addEventListener("click", function descubrir() {
   acierto5.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/servicios/05Servicios.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard6.addEventListener("click", function descubrir() {
@@ -62,6 +114,16 @@ flipCard6.addEventListener("click", function descubrir() {
   acierto6.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/servicios/06Servicios.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard7.addEventListener("click", function descubrir() {
@@ -69,6 +131,16 @@ flipCard7.addEventListener("click", function descubrir() {
   acierto7.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/servicios/07Servicios.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard8.addEventListener("click", function descubrir() {
@@ -76,6 +148,16 @@ flipCard8.addEventListener("click", function descubrir() {
   acierto8.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/servicios/08Servicios.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard9.addEventListener("click", function descubrir() {
@@ -83,6 +165,16 @@ flipCard9.addEventListener("click", function descubrir() {
   acierto9.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/servicios/09Servicios.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 flipCard10.addEventListener("click", function descubrir() {
@@ -90,6 +182,16 @@ flipCard10.addEventListener("click", function descubrir() {
   acierto10.classList.add("acertado");
   counter++;
   endGame();
+
+  setTimeout(() => {
+    showImage.classList.add("show-image");
+    showImage.innerHTML =
+      '<img src="/CuidArte/img/servicios/10Servicios.png" alt="" />';
+  }, 200);
+
+  setTimeout(() => {
+    showImage.classList.remove("show-image");
+  }, 2000);
 });
 
 //Fin del Juego
@@ -102,11 +204,11 @@ function endGame() {
     setTimeout(() => {
       bg.style.opacity = "1";
       bg.style.visibility = "visible";
-    }, 400);
+    }, 1500);
 
     setTimeout(() => {
       modal.style.transform = "scale(1)";
       modal.style.opacity = "1";
-    }, 700);
+    }, 2000);
   }
 }

@@ -151,6 +151,37 @@ body {
   transition: 0.8s;
 }
 
+/* Imagen Acierto */
+
+.imagen-acierto {
+  position: absolute;
+  top: 50;
+  left: 50;
+  width: 380px;
+  height: 380px;
+  border-radius: 10px;
+  background-color: #006d38;
+  z-index: 99;
+  box-shadow: 4px 6px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  transform: scale(0);
+  opacity: 0;
+}
+
+.imagen-acierto img {
+  width: 360px;
+  height: 360px;
+  border-radius: 8px;
+}
+
+.show-image {
+  transform: scale(1);
+  opacity: 1;
+}
+
 /* Marcas */
 
 .circulo {

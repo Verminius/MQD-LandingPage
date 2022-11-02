@@ -45,10 +45,11 @@ body {
 /* HEADER */
 .header-cont {
   width: 100%;
-  height: 8%;
+  height: 10%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  z-index: 1;
 }
 
 .logo-juego {
@@ -70,6 +71,7 @@ body {
   transition: all 0.3s;
   opacity: 0;
   visibility: hidden;
+  position: absolute;
 }
 
 .opacity {
@@ -144,11 +146,20 @@ body {
 }
 
 /* JUEGO */
+main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .grid {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 50;
+  left: 50;
   display: grid;
   grid-template-columns: repeat(47, 1fr);
   grid-template-rows: repeat(25, 1fr);
@@ -304,9 +315,10 @@ body {
 /* FOOTER */
 .footer-index {
   width: 100%;
+  height: 10%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .bolivar {

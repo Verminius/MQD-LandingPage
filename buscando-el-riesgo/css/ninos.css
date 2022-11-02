@@ -3,7 +3,8 @@
   justify-content: flex-start;
   align-items: center;
   position: absolute;
-  top: 90px;
+  top: 50;
+  left: 50;
   width: 1280px;
   height: 720px;
   box-shadow: 8px 8px 0 var(--greytransp);
@@ -20,7 +21,7 @@
   align-items: center;
   z-index: 1;
   transition: all 0.5s ease;
-  transform: translateX(-355px);
+  transform: translateX(-350px);
 }
 
 .show-btn {
@@ -60,7 +61,7 @@
 }
 
 .marca2 {
-  grid-area: 15/38/17/40;
+  grid-area: 14/37/18/41;
 }
 
 .marca3 {
@@ -89,7 +90,8 @@
   /* Tablero */
 
   .tablero {
-    top: 50px;
+    top: 50;
+    left: 50;
     width: 977.49px;
     height: 550px;
   }
