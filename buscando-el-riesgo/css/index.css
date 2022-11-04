@@ -37,6 +37,11 @@ header {
   margin-top: 120px;
 }
 
+.move-up {
+  transition: all 1s ease;
+  transform: scale(0.4) translateX(-900px) translateY(-250px);
+}
+
 /* BG */
 .bg {
   position: absolute;
@@ -64,6 +69,10 @@ header {
   transition: all 0.5s ease;
   opacity: 0;
   visibility: hidden;
+}
+
+a {
+  text-decoration: none;
 }
 
 .cont-inst {
@@ -310,6 +319,15 @@ footer {
 
 .bolivar {
   justify-content: flex-end;
+}
+
+.img-footer {
+  transition: all 0.5s ease;
+  transform: translateY(0px) translateX(0px);
+}
+
+.delay {
+  transform: translateY(200px) translateX(100px);
 }
 
 .btn-index {

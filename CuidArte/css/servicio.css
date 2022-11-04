@@ -11,25 +11,25 @@
 }
 
 .marca1 {
-  grid-area: 19/13/21/16;
+  grid-area: 18/13/22/16;
 }
 .marca2 {
-  grid-area: 10/13/12/15;
+  grid-area: 7/13/13/17;
 }
 .marca3 {
-  grid-area: 14/15/16/17;
+  grid-area: 13/14/17/18;
 }
 .marca4 {
-  grid-area: 8/11/10/13;
+  grid-area: 7/10/12/15;
 }
 .marca5 {
-  grid-area: 8/9/10/11;
+  grid-area: 6/8/10/12;
 }
 .marca6 {
-  grid-area: 9/3/11/5;
+  grid-area: 8/2/12/6;
 }
 .marca7 {
-  grid-area: 2/15/5/18;
+  grid-area: 1/15/6/18;
 }
 .marca8 {
   grid-area: 11/15/13/17;

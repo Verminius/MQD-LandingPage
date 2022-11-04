@@ -97,14 +97,14 @@ showBtn.addEventListener("click", () => {
 
 //Final del Juego
 
-function endGame() {
-  if (counter === 9) {
-    let fondoModal = document.getElementById("contModal");
-    let modalEndGame = document.getElementById("modal");
+// function endGame() {
+//   if (counter === 9) {
+//     let fondoModal = document.getElementById("contModal");
+//     let modalEndGame = document.getElementById("modal");
 
-    setTimeout(() => {
-      fondoModal.classList.add("opacity");
-      modalEndGame.classList.add("show-modal");
-    }, 1500);
-  }
-}
+//     setTimeout(() => {
+//       fondoModal.classList.add("opacity");
+//       modalEndGame.classList.add("show-modal");
+//     }, 1500);
+//   }
+// }
