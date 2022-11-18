@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/reaccion-segura/img/fondo-quimico.png);
+  background-image: url(/reaccion-segura/img/bg-tablero.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

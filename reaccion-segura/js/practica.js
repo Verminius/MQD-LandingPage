@@ -38,12 +38,12 @@ window.onload = function () {
     y: 4, // Y position
     width: 0, // Width, gets calculated
     height: 0, // Height, gets calculated
-    columns: 15, // Number of tile columns
-    rows: 16, // Number of tile rows
-    tilewidth: 40, // Visual width of a tile
-    tileheight: 40, // Visual height of a tile
-    rowheight: 36, // Height of a row
-    radius: 18, // Bubble collision radius
+    columns: 8, // Number of tile columns
+    rows: 6, // Number of tile rows
+    tilewidth: 70, // Visual width of a tile
+    tileheight: 70, // Visual height of a tile
+    rowheight: 65, // Height of a row
+    radius: 30, // Bubble collision radius
     tiles: [], // The two-dimensional tile array
   };
 
@@ -70,7 +70,7 @@ window.onload = function () {
       y: 0,
       angle: 0,
       speed: 1000,
-      dropspeed: 900,
+      dropspeed: 300,
       tiletype: 0,
       visible: false,
     },
@@ -102,7 +102,7 @@ window.onload = function () {
   ]; // Odd row tiles
 
   // Number of different colors
-  var bubblecolors = 12;
+  var bubblecolors = 25;
 
   // Game states
   var gamestates = {
@@ -191,7 +191,7 @@ window.onload = function () {
     }
 
     level.width = level.columns * level.tilewidth + level.tilewidth / 2;
-    level.height = (level.rows - 1) * level.rowheight + level.tileheight;
+    level.height = (level.rows + 1) * level.rowheight + level.tileheight;
 
     // Init the player
     player.x = level.x + level.width / 2 - level.tilewidth / 2;
@@ -447,9 +447,8 @@ window.onload = function () {
           setGameState(gamestates.ready);
         } else {
           // No tiles left, game over
-          // setGameState(gamestates.gameover);
           setTimeout(() => {
-            location.assign("/reaccion-segura/end.html");
+            location.assign("/reaccion-segura/end-practica.html");
           }, 1000);
         }
       }
@@ -511,7 +510,7 @@ window.onload = function () {
       // Find clusters
       cluster = findCluster(gridpos.x, gridpos.y, true, true, false);
 
-      if (cluster.length >= 3) {
+      if (cluster.length >= 2) {
         // Remove the cluster
         document.querySelector("#sonido-acierto").play();
 
@@ -528,18 +527,21 @@ window.onload = function () {
     const errorBg = document.querySelector(".contenedor-body");
     const errorMsg = document.querySelector(".error-msg");
 
-    if (turncounter <= 4) {
+    if (turncounter <= 2) {
       document.querySelector("#sonido-error").play();
 
       errorBg.classList.add("error");
       errorMsg.classList.add("error-msg-show");
+
       setTimeout(() => {
         errorBg.classList.remove("error");
         errorMsg.classList.remove("error-msg-show");
       }, 200);
+
       setTimeout(() => {
         errorBg.classList.add("error");
         errorMsg.classList.add("error-msg-show");
+
         setTimeout(() => {
           errorBg.classList.remove("error");
           errorMsg.classList.remove("error-msg-show");
@@ -547,7 +549,7 @@ window.onload = function () {
       }, 350);
     }
 
-    if (turncounter >= 3) {
+    if (turncounter >= 99) {
       // Add a row of bubbles
       addBubbles();
       turncounter = 0;
@@ -572,7 +574,7 @@ window.onload = function () {
         nextBubble();
         // setGameState(gamestates.gameover);
         setTimeout(() => {
-          location.assign("/reaccion-segura/end.html");
+          location.assign("/reaccion-segura/end-practica.html");
         }, 1000);
 
         return true;
@@ -947,8 +949,8 @@ window.onload = function () {
     context.beginPath();
     context.moveTo(centerx, centery);
     context.lineTo(
-      centerx + 5 * level.tilewidth * Math.cos(degToRad(player.angle)),
-      centery - 5 * level.tileheight * Math.sin(degToRad(player.angle))
+      centerx + 3 * level.tilewidth * Math.cos(degToRad(player.angle)),
+      centery - 3 * level.tileheight * Math.sin(degToRad(player.angle))
     );
     context.stroke();
 

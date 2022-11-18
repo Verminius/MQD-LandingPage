@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reaccion Segura | Práctica</title>
+    <link
+      rel="shortcut icon"
+      href="/reaccion-segura/img/favicon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/32bb34e7d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/reaccion-segura/css/style.css" />
+  </head>
+  <body>
+    <div class="contenedor-body">
+      <!-- Mensaje Error -->
+      <div class="error-msg">
+        <h3>¡Cuidado!</h3>
+      </div>
+
+      <!-- Tablero -->
+      <div class="blur">
+        <canvas id="viewport" width="602" height="635"></canvas>
+      </div>
+    </div>
+
+    <!-- sonidos -->
+
+    <audio
+      src="/reaccion-segura/sound/alarma.mp3"
+      class="sonido"
+      id="sonido-error"
+      preload="auto"
+    ></audio>
+
+    <audio
+      src="/reaccion-segura/sound/correct.wav"
+      class="sonido"
+      id="sonido-acierto"
+      preload="auto"
+    ></audio>
+
+    <!-- Scripts -->
+
+    <script src="/reaccion-segura/js/practica.js"></script>
+  </body>
+</html>
