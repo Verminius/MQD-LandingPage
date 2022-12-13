@@ -1,0 +1,25 @@
+/* FUENTE */
+
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap");
+
+/* COLORES */
+
+:root {
+  --yellow: #fadc05;
+  --red: #e62d3a;
+  --blue: #05b1e2;
+  --grey: #4e4d4d;
+  --black: #3c3c3b;
+  --white: #fff;
+  --green: #30bb06;
+  --greytransp: rgba(0, 0, 0, 0.25);
+}
+
+/* AJUSTE SCREEN + FUENTE INTEGREDA */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo", sans-serif;
+}

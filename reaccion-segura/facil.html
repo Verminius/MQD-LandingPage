@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reaccion Segura | Práctica</title>
+    <link
+      rel="shortcut icon"
+      href="https://i.postimg.cc/Y98tmcyJ/favicon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/32bb34e7d2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/reaccion-segura/css/style.css" />
+  </head>
+  <body>
+    <!-- Main -->
+    <div class="contenedor-body">
+      <!-- Mensaje Error -->
+      <div class="error-msg">
+        <h3>¡Cuidado!</h3>
+      </div>
+
+      <!-- Menu desplegable -->
+      <div class="container" id="desplegable">
+        <div class="cta-desplegar" id="btnDesp">
+          <i class="fa-solid fa-circle-question"></i>
+        </div>
+        <div class="menu">
+          <div class="tittle-menu">
+            <h3>Sustancias</h3>
+            <div class="close" id="close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <div class="option-slider">
+            <div class="option-menu opcion-1 visible">
+              <div class="img-menu">
+                <img src="https://i.postimg.cc/fyTTHW9z/agua-infl.png" alt="" />
+              </div>
+              <div class="text-menu">
+                <p>
+                  Sustancias que al entrar en contacto con el agua desprenden
+                  gases inflamables.
+                </p>
+              </div>
+            </div>
+            <div class="option-menu opcion-2">
+              <div class="img-menu">
+                <img
+                  src="https://i.postimg.cc/8zrkX0j6/comburente.png"
+                  alt=""
+                />
+              </div>
+              <div class="text-menu">
+                <p>Sustancias comburentes</p>
+              </div>
+            </div>
+            <div class="option-menu opcion-3">
+              <div class="img-menu">
+                <img
+                  src="https://i.postimg.cc/7YRYVkY4/combustion.png"
+                  alt=""
+                />
+              </div>
+              <div class="text-menu">
+                <p>Sustancias que pueden experimentar combustión espontanea</p>
+              </div>
+            </div>
+            <div class="option-menu opcion-4">
+              <div class="img-menu">
+                <img
+                  src="https://i.postimg.cc/SNRxCs4V/comprimido.png"
+                  alt=""
+                />
+              </div>
+              <div class="text-menu">
+                <p>Gases comprimidos</p>
+              </div>
+            </div>
+            <div class="option-menu opcion-5">
+              <div class="img-menu">
+                <img src="https://i.postimg.cc/mrfLvyH6/corrosivo.png" alt="" />
+              </div>
+              <div class="text-menu">
+                <p>Sustancias corrosivas</p>
+              </div>
+            </div>
+            <div class="option-menu opcion-6">
+              <div class="img-menu">
+                <img src="https://i.postimg.cc/q7sJ46cB/explosivo.png" alt="" />
+              </div>
+              <div class="text-menu">
+                <p>Sustancias explosivas</p>
+              </div>
+            </div>
+            <div class="option-menu opcion-7">
+              <div class="img-menu">
+                <img src="https://i.postimg.cc/3NRYXLsW/gas-infl.png" alt="" />
+              </div>
+              <div class="text-menu">
+                <p>
+                  Sustancias que al contacto con el agua desprenden gases
+                  inflamables.
+                </p>
+              </div>
+            </div>
+            <div class="option-menu opcion-8">
+              <div class="img-menu">
+                <img src="https://i.postimg.cc/pr6xqfvC/gas-toxic.png" alt="" />
+              </div>
+              <div class="text-menu">
+                <p>Gases tóxicas</p>
+              </div>
+            </div>
+            <div class="option-menu opcion-9">
+              <div class="img-menu">
+                <img
+                  src="https://i.postimg.cc/6Q0kMrLZ/liquid-infl.png"
+                  alt=""
+                />
+              </div>
+              <div class="text-menu">
+                <p>Líquidos inflamables</p>
+              </div>
+            </div>
+            <div class="option-menu opcion-10">
+              <div class="img-menu">
+                <img src="https://i.postimg.cc/50KZVfrN/peroxido.png" alt="" />
+              </div>
+              <div class="text-menu">
+                <p>Peróxidos</p>
+              </div>
+            </div>
+            <div class="option-menu opcion-11">
+              <div class="img-menu">
+                <img
+                  src="https://i.postimg.cc/wMtnxSK5/solid-infl.png"
+                  alt=""
+                />
+              </div>
+              <div class="text-menu">
+                <p>
+                  Sólidos Inflamables, reacción espontanea y explosivos
+                  insensibilizados.
+                </p>
+              </div>
+            </div>
+            <div class="option-menu opcion-12">
+              <div class="img-menu">
+                <img src="https://i.postimg.cc/15qbkhrs/toxicas.png" alt="" />
+              </div>
+              <div class="text-menu">
+                <p>Sustancias tóxicas</p>
+              </div>
+            </div>
+            <div class="option-menu opcion-13">
+              <div class="img-menu">
+                <img src="https://i.postimg.cc/fR7pbcPP/varios.png" alt="" />
+              </div>
+              <div class="text-menu">
+                <p>Varios</p>
+              </div>
+            </div>
+          </div>
+          <div class="arrow-menu">
+            <img
+              id="arrowIzq"
+              src="https://i.postimg.cc/NFJGZh61/arrow-izq.png"
+              alt=""
+            />
+            <img
+              id="arrowDer"
+              src="https://i.postimg.cc/Pf2qCDgP/arrow-der.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Tablero -->
+      <div class="blur">
+        <canvas class="tablero" id="viewport" width="602" height="635"></canvas>
+      </div>
+    </div>
+
+    <!-- Instrucciones -->
+    <div class="inst-margen-cont" id="inst1">
+      <div class="inst-container">
+        <div class="inst-contenido">
+          <div class="inst-tittle"><h3>¿Cómo jugar?</h3></div>
+          <div class="inst-bottom">
+            <div class="inst-text-btn">
+              <div class="inst-text">
+                <p>
+                  El objetivo del juego es limpiar el tablero de sustancias.
+                </p>
+              </div>
+            </div>
+            <div class="ejemplo">
+              <img src="https://i.postimg.cc/zGW5FHcw/inst1.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inst-margen-cont" id="inst2">
+      <div class="inst-container">
+        <div class="inst-contenido">
+          <div class="inst-tittle"><h3>Agrupar</h3></div>
+          <div class="inst-bottom">
+            <div class="inst-text-btn">
+              <div class="inst-text">
+                <p>
+                  Para lograrlo deberás agrupar los frascos en grupos de mínimo
+                  3 sustancias para que se almacenen.
+                </p>
+              </div>
+            </div>
+            <div class="ejemplo">
+              <img src="https://i.postimg.cc/DzThjf99/inst2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inst-margen-cont" id="inst3">
+      <div class="inst-container">
+        <div class="inst-contenido">
+          <div class="inst-tittle"><h3>Apunta</h3></div>
+          <div class="inst-bottom">
+            <div class="inst-text-btn">
+              <div class="inst-text">
+                <p>
+                  Apunta con el mouse y dá click para liberar el frasco en la
+                  dirección señalada.
+                </p>
+              </div>
+            </div>
+            <div class="ejemplo">
+              <img src="https://i.postimg.cc/509VJ7Np/inst3.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inst-margen-cont" id="inst4">
+      <div class="inst-container">
+        <div class="inst-contenido">
+          <div class="inst-tittle"><h3>Fijate bien</h3></div>
+          <div class="inst-bottom">
+            <div class="inst-text-btn">
+              <div class="inst-text">
+                <p>
+                  Aunque el frasco sea el mismo, si la etiqueta es diferente el
+                  grupo no desaparecerá.
+                </p>
+              </div>
+            </div>
+            <div class="ejemplo">
+              <img src="https://i.postimg.cc/sxqdp3P0/inst-8.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inst-margen-cont" id="inst5">
+      <div class="inst-container">
+        <div class="inst-contenido">
+          <div class="inst-tittle"><h3>Rebotes</h3></div>
+          <div class="inst-bottom">
+            <div class="inst-text-btn">
+              <div class="inst-text">
+                <p>Puedes usar los muros para alcanzar sitios complicados.</p>
+              </div>
+            </div>
+            <div class="ejemplo">
+              <img src="https://i.postimg.cc/d0jYzPvL/inst4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inst-margen-cont" id="inst6">
+      <div class="inst-container">
+        <div class="inst-contenido">
+          <div class="inst-tittle"><h3>Panel de ayuda</h3></div>
+          <div class="inst-bottom">
+            <div class="inst-text-btn">
+              <div class="inst-text">
+                <p>
+                  Podrás ver que sustancias tienes disponibles en el panel de
+                  ayuda.
+                </p>
+              </div>
+            </div>
+            <div class="ejemplo">
+              <img src="https://i.postimg.cc/ZKWJ0MPM/inst5.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inst-margen-cont" id="inst7">
+      <div class="inst-container">
+        <div class="inst-contenido">
+          <div class="inst-tittle"><h3>¡No falles!</h3></div>
+          <div class="inst-bottom">
+            <div class="inst-text-btn">
+              <div class="inst-text">
+                <p>
+                  ¡Cuidado! La cantidad de sustancias irá aumentando con el
+                  tiempo.
+                </p>
+              </div>
+            </div>
+            <div class="ejemplo">
+              <img src="https://i.postimg.cc/sDGR3ZsF/inst7.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inst-margen-cont" id="inst8">
+      <div class="inst-container">
+        <div class="inst-contenido">
+          <div class="inst-tittle"><h3>Demasiado desorden...</h3></div>
+          <div class="inst-bottom">
+            <div class="inst-text-btn">
+              <div class="inst-text">
+                <p>
+                  El juego terminará si alguna de las sustancias toca el fondo
+                  del tablero.
+                </p>
+              </div>
+            </div>
+            <div class="ejemplo">
+              <img src="https://i.postimg.cc/1tWZ3G8S/inst6.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sonidos -->
+    <audio
+      src="/reaccion-segura/sound/alarma.mp3"
+      class="sonido"
+      id="sonido-error"
+      preload="auto"
+    ></audio>
+
+    <audio
+      src="/reaccion-segura/sound/correct.wav"
+      class="sonido"
+      id="sonido-acierto"
+      preload="auto"
+    ></audio>
+
+    <!-- Scripts -->
+    <script src="/reaccion-segura/js/facil.js"></script>
+    <script src="/reaccion-segura/js/transiciones.js"></script>
+    <script src="/reaccion-segura/js/modal.js"></script>
+  </body>
+</html>

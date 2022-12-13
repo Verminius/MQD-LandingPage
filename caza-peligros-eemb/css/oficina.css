@@ -1,0 +1,19 @@
+.marca1 {
+  grid-area: 8/18/12/22;
+}
+
+.marca2 {
+  grid-area: 15/7/19/11;
+}
+
+.marca3 {
+  grid-area: 19/17/24/23;
+}
+
+.marca4 {
+  grid-area: 5/40/9/44;
+}
+
+.marca5 {
+  grid-area: 12/30/16/34;
+}
