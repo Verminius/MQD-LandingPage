@@ -339,123 +339,6 @@ function stateShootBubble(dt) {
   }
 }
 
-// function stateRemoveCluster(dt) {
-//   if (animationstate == 0) {
-//     resetRemoved();
-
-//     // Mark the tiles as removed
-//     for (var i = 0; i < cluster.length; i++) {
-//       // Set the removed flag
-//       cluster[i].removed = true;
-//     }
-
-//     // Add cluster score
-//     score += cluster.length * 1;
-
-//     // Find floating clusters
-//     floatingclusters = findFloatingClusters();
-
-//     if (floatingclusters.length > 0) {
-//       // Setup drop animation
-//       for (var i = 0; i < floatingclusters.length; i++) {
-//         for (var j = 0; j < floatingclusters[i].length; j++) {
-//           var tile = floatingclusters[i][j];
-//           tile.shift = 0;
-//           tile.shift = 1;
-//           tile.velocity = player.bubble.dropspeed;
-
-//           score += 1;
-
-//           localStorage.setItem("mostRecentScore", score);
-//         }
-//       }
-//     }
-
-//     animationstate = 1;
-//   }
-
-//   if (animationstate == 1) {
-//     // Pop bubbles
-//     var tilesleft = false;
-//     for (var i = 0; i < cluster.length; i++) {
-//       var tile = cluster[i];
-
-//       if (tile.type >= 0) {
-//         tilesleft = true;
-
-//         // Alpha animation
-//         tile.alpha -= dt * 15;
-//         if (tile.alpha < 0) {
-//           tile.alpha = 0;
-//         }
-
-//         if (tile.alpha == 0) {
-//           tile.type = -1;
-//           tile.alpha = 1;
-//         }
-//       }
-//     }
-
-//     // Drop bubbles
-//     for (var i = 0; i < floatingclusters.length; i++) {
-//       for (var j = 0; j < floatingclusters[i].length; j++) {
-//         var tile = floatingclusters[i][j];
-
-//         if (tile.type >= 0) {
-//           tilesleft = true;
-
-//           // Accelerate dropped tiles
-//           tile.velocity += dt * 700;
-//           tile.shift += dt * tile.velocity;
-
-//           // Alpha animation
-//           tile.alpha -= dt * 8;
-//           if (tile.alpha < 0) {
-//             tile.alpha = 0;
-//           }
-
-//           // Check if the bubbles are past the bottom of the level
-//           if (
-//             tile.alpha == 0 ||
-//             tile.y * level.rowheight + tile.shift >
-//               (level.rows - 1) * level.rowheight + level.tileheight
-//           ) {
-//             tile.type = -1;
-//             tile.shift = 0;
-//             tile.alpha = 1;
-//           }
-//         }
-//       }
-//     }
-
-//     if (!tilesleft) {
-//       // Next bubble
-//       nextBubble();
-
-//       // Check for game over
-//       var tilefound = false;
-//       for (var i = 0; i < level.columns; i++) {
-//         for (var j = 0; j < level.rows; j++) {
-//           if (level.tiles[i][j].type != -1) {
-//             tilefound = true;
-//             break;
-//           }
-//         }
-//       }
-
-//       if (tilefound) {
-//         setGameState(gamestates.ready);
-//       } else {
-//         // No tiles left, game over
-//         // setGameState(gamestates.gameover);
-//         setTimeout(() => {
-//           location.assign("/reaccion-segura/end2.html");
-//         }, 500);
-//       }
-//     }
-//   }
-// }
-
 // Snap bubble to the grid
 function snapBubble() {
   // Get the grid position
@@ -511,7 +394,7 @@ function snapBubble() {
     // Find clusters
     cluster = findCluster(gridpos.x, gridpos.y, true, true, false);
 
-    if (cluster.length >= 3) {
+    if (cluster.length >= 2) {
       // Remove the cluster
       document.querySelector("#sonido-acierto").play();
 
@@ -547,7 +430,7 @@ function snapBubble() {
     }, 350);
   }
 
-  if (turncounter >= 5) {
+  if (turncounter >= 3) {
     // Add a row of bubbles
     addBubbles();
     turncounter = 0;
@@ -562,25 +445,6 @@ function snapBubble() {
   nextBubble();
   setGameState(gamestates.ready);
 }
-
-// function checkGameOver() {
-//   // Check for game over
-//   for (var i = 0; i < level.columns; i++) {
-//     // Check if there are bubbles in the bottom row
-//     if (level.tiles[i][level.rows - 1].type != -1) {
-//       // Game over
-//       nextBubble();
-//       // setGameState(gamestates.gameover);
-//       setTimeout(() => {
-//         location.assign("/reaccion-segura/end.html");
-//       }, 500);
-
-//       return true;
-//     }
-//   }
-
-//   return false;
-// }
 
 function addBubbles() {
   // Move the rows downwards
@@ -826,39 +690,6 @@ function render() {
 
   // Render player bubble
   renderPlayer();
-
-  // Game Over overlay
-  // if (gamestate == gamestates.gameover) {
-  //   context.fillStyle = "rgba(0, 140, 68, 0.5)";
-  //   context.fillRect(
-  //     level.x - 4,
-  //     level.y - 4,
-  //     level.width + 8,
-  //     level.height + 2 * level.tileheight + 8 - yoffset
-  //   );
-
-  //   context.fillStyle = "#ffffff";
-  //   context.font = "24px Roboto";
-
-  //   drawCenterText(
-  //     "¡Fin del Juego!",
-  //     level.x,
-  //     level.y + level.height / 2 + 0,
-  //     level.width
-  //   );
-  //   drawCenterText(
-  //     "Tu puntaje fue:",
-  //     level.x,
-  //     level.y + level.height / 2 + 30,
-  //     level.width
-  //   );
-  //   drawCenterText(
-  //     "Click para reiniciar",
-  //     level.x,
-  //     level.y + level.height / 2 + 120,
-  //     level.width
-  //   );
-  // }
 }
 
 // Draw a frame around the game
@@ -917,7 +748,7 @@ function renderCluster(cluster, r, g, b) {
     var coord = getTileCoordinate(cluster[i].x, cluster[i].y);
 
     // Draw the tile using the color
-    // context.fillStyle = "rgb(" + r + "," + g + "," + b + ")";
+
     context.fillRect(
       coord.tilex + level.tilewidth / 4,
       coord.tiley + level.tileheight / 4,
