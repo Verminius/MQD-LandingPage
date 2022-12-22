@@ -411,7 +411,7 @@ function snapBubble() {
   const errorBg = document.querySelector(".contenedor-body");
   const errorMsg = document.querySelector(".error-msg");
 
-  if (turncounter <= 4) {
+  if (turncounter <= 3) {
     document.querySelector("#sonido-error").play();
 
     errorBg.classList.add("error");
