@@ -285,12 +285,12 @@ body {
   align-items: center;
   z-index: 1;
   transition: all 0.5s ease;
-  transform: translateX(405px);
+  transform: translateX(370px);
 }
 
 .show-btn {
   padding: 20px 7px;
-  background: var(--white);
+  background: var(--red);
   border-radius: 10px 0 0 10px;
   box-shadow: -4px 4px 0 var(--greytransp);
   cursor: pointer;
@@ -301,9 +301,9 @@ body {
   writing-mode: vertical-rl;
   text-orientation: sideways;
   letter-spacing: 1px;
-  color: var(--red);
+  color: var(--yellow);
   font-weight: 700;
-  font-size: 25px;
+  font-size: 50px;
 }
 
 .texto {
@@ -426,7 +426,7 @@ a {
     width: 350px;
     height: 600px;
     transition: all 0.5s ease;
-    transform: translateX(325px);
+    transform: translateX(315px);
   }
 
   .show {
@@ -438,7 +438,7 @@ a {
   }
 
   .show-text {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .texto {
@@ -480,7 +480,7 @@ a {
     width: 350px;
     height: 550px;
     transition: all 0.5s ease;
-    transform: translateX(322px);
+    transform: translateX(315px);
   }
 
   .show {
@@ -492,7 +492,7 @@ a {
   }
 
   .show-text {
-    font-size: 20px;
+    font-size: 35px;
   }
 
   .texto {

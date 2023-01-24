@@ -163,6 +163,8 @@ izquierda4.addEventListener("click", () => {
   }, 100);
 });
 
+//transicion de index a menu de juego
+
 done.addEventListener("click", () => {
   menu.classList.toggle("delay-btn");
   mainLogo.classList.toggle("moveToHeader");
@@ -179,12 +181,7 @@ done.addEventListener("click", () => {
     contInst.style.visibility = "hidden";
     contInst.style.opacity = 0;
   }, 300);
-});
 
-//transicion de index a menu de juego
-const inicio = document.getElementById("inicio");
-
-inicio.addEventListener("click", () => {
   menu.classList.toggle("delay-btn");
   mainLogo.classList.toggle("moveToHeader");
   footerIzquierda.classList.toggle("moveOut");
