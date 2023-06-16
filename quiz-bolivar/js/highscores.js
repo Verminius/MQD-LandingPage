@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       const score = doc.data();
       html += `
           <ul class="score-item">  
-              <h2 class="high-score">${score.name} - ${score.score}</h2>
+              <h2 class="high-score">${score.name} ${score.lastname} - ${score.score}</h2>
           </ul>
           `;
     });

@@ -64,6 +64,7 @@ let winningIterator = 0;
 cell.forEach((e) => {
   e.addEventListener("click", () => {
     e.classList.add("strickout");
+    document.querySelector("#click").cloneNode().play();
 
     if (matchWin()) {
       letter[winningIterator].classList.add("show-bingo");
@@ -81,6 +82,7 @@ cell.forEach((e) => {
           showWin.classList.add("show-win");
           btnBack.classList.add("showBtn");
           txtCont.classList.add("show-text");
+          document.querySelector("#victory").play();
         }
       }, 300);
 
@@ -115,6 +117,7 @@ function matchWin() {
     if (ite === 5) {
       let indexWin = winningPositions.indexOf(combination);
       winningPositions.splice(indexWin, 1);
+      document.querySelector("#complete").play();
     }
 
     return combination.every((index) => {

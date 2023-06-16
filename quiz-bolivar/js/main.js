@@ -58,6 +58,9 @@ choices.forEach((choice) => {
 
     if (classToApply === "correct") {
       incrementScore(SCORE_POINTS);
+      document.querySelector("#correct").play();
+    } else {
+      document.querySelector("#wrong").play();
     }
 
     selectedChoice.parentElement.classList.add(classToApply);

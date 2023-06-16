@@ -6,10 +6,11 @@ const finalScore = document.querySelector("#finalScore");
 finalScore.value = mostRecentScore;
 
 const username = document.querySelector("#username");
+const lastname = document.querySelector("#lastname");
 const saveScoreBtn = document.querySelector("#saveScoreBtn");
 
 username.addEventListener("keyup", () => {
-  saveScoreBtn.disabled = !username.value;
+  saveScoreBtn.disabled = !username.value && !lastname.value;
 });
 
 function saveScore() {
@@ -20,8 +21,9 @@ function saveScore() {
 
     const name = taskForm["username"];
     const score = taskForm["finalScore"];
+    const lName = taskForm["lastname"];
 
-    saveTask(name.value, score.value);
+    saveTask(name.value, lName.value, score.value);
 
     taskForm.reset();
 
