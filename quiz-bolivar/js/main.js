@@ -11,7 +11,7 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 const SCORE_POINTS = 1;
-const MAX_QUESTIONS = 15;
+const MAX_QUESTIONS = 20;
 
 startGame = () => {
   questionCounter = 0;
