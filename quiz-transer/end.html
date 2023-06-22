@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienestar Quiz | Final</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="/quiz-transer/css/root.css" />
+    <link rel="stylesheet" href="/quiz-transer/css/style.css" />
+</head>
+
+<body>
+    
+    <!-- HEADER -->
+
+    <div class="cont-header"></div>
+
+    <!-- GAME -->
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <form class="end-form-container" id="task-form">
+                <h2 id="end-text">¡Tu Puntaje Final!</h2>
+                <input id="finalScore"></input>
+                <h2 id="end-text-2">
+                    Escribe tu nombre completo para guardar tu puntaje
+                </h2>
+                <input id="username" placeholder="Nombre" />
+                <input id="lastname" placeholder="Apellido" />
+                <button class="btn" id="saveScoreBtn">Guardar</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="cont-footer">
+        <div class="prudencio">
+          <img src="/quiz-transer/img/LogoPrudencio.png" alt="" />
+        </div>
+        <div class="bolivar">
+          <img src="/quiz-transer/img/bolivar.png" alt="" />
+        </div>
+      </div>
+
+    <!-- SCRIPT -->
+    <script type="module" src="/quiz-transer/js/end.js"></script>
+</body>
+
+</html>

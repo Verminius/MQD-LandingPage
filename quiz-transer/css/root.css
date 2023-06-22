@@ -1,0 +1,65 @@
+/* Colores */
+:root {
+  --white: #fff;
+  --yellow: #feeb29;
+  --yellow2: #fdc80e;
+  --yellow3: #f6a620;
+  --red: #bf4659;
+  --green2: #71c93e;
+  --grey: #cbe3f3;
+  --black: #000000;
+  --brown: #42210b;
+  --greytransp: rgba(0, 0, 0, 0.15);
+}
+
+/* Fuentes */
+@font-face {
+  font-family: "GothamBook";
+  src: local("GothamBook"),
+    url(/quiz-transer/fonts/GothamBook.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "GothamBold";
+  src: local("GothamBold"),
+    url(/quiz-transer/fonts/GothamBold.ttf) format("truetype");
+}
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "GothamBold", sans-serif;
+  color: var(--black);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/quiz-transer/img/bg.png);
+  gap: 1rem;
+  overflow: hidden;
+}
+
+/* Tamaños de fuente */
+h1 {
+  font-size: 5rem;
+  color: var(--yellow3);
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
