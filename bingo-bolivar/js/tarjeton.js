@@ -10,61 +10,61 @@ class Valor {
 //Valores
 const respeto = new Valor(
   "Respeto",
-  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "/bingo-bolivar/img/respeto.png",
   "Aceptémonos los unos a los otros sin intensiones de querer cambiarnos, en las diferencias esta nuestra identidad."
 );
 
 const generosidad = new Valor(
   "Generosidad",
-  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "/bingo-bolivar/img/generosidad.png",
   "Compartamos con amabilidad y de manera desinteresada con nuestros seres queridos."
 );
 
 const amor = new Valor(
   "Amor",
-  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "/bingo-bolivar/img/amor.png",
   "Anhelemos la compañía, alegrémonos de los éxitos y compartamos los malos momentos de nuestros seres amados."
 );
 
 const justicia = new Valor(
   "Justicia",
-  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "/bingo-bolivar/img/justicia.png",
   "Todos tenemos derechos y deberes, si nos aseguramos de cumplirlos la convivencia no será un problema."
 );
 
 const responsabilidad = new Valor(
   "Responsabilidad",
-  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "/bingo-bolivar/img/responsabilidad.png",
   "Debemos ser capaces de asumir las consecuencias de nuestras acciones y decisiones, buscando el bien común de nuestra familia."
 );
 
 const gratitud = new Valor(
   "Gratitud",
-  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "/bingo-bolivar/img/agradecimiento.png",
   "Sintamos alegría incluso en con los detalles más pequeños, disfrutemos de las experiencias, momentos y seres amados en la vida."
 );
 
 const paciencia = new Valor(
   "Paciencia",
-  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "/bingo-bolivar/img/paciencia.png",
   "Debemos saber esperar cuando deseamos algo o tenemos expectativas de los demás. No todos van al mismo ritmo."
 );
 
 const compasion = new Valor(
   "Compasión",
-  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "/bingo-bolivar/img/compasion.png",
   "Seamos empáticos en los momentos malos de nuestra familia, comprendámoslos con ternura y amor. No siempre se tienen buenos días."
 );
 
 const perdon = new Valor(
   "Perdón",
-  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "/bingo-bolivar/img/perdon.png",
   "Decidir no guardar rencores ni remordimientos con tus seres queridos es uno de los más puros actos de amor y aceptación."
 );
 
 const bondad = new Valor(
   "Bondad",
-  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "/bingo-bolivar/img/bondad.png",
   "Estemos dispuestos permanentemente a hacer el bien, de manera amable y generosa."
 );
 

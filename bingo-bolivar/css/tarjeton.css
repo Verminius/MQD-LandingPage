@@ -264,6 +264,7 @@ body:focus {
 .img-cont img {
   width: 70%;
   height: auto;
+  padding: 0.5rem;
 }
 
 .text-cont {
