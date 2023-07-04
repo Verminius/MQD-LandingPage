@@ -1,3 +1,118 @@
+//objeto Valor
+class Valor {
+  constructor(titulo, img, descripcion) {
+    this.titulo = titulo;
+    this.img = img;
+    this.descripcion = descripcion;
+  }
+}
+
+//Valores
+const respeto = new Valor(
+  "Respeto",
+  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "Aceptémonos los unos a los otros sin intensiones de querer cambiarnos, en las diferencias esta nuestra identidad."
+);
+
+const generosidad = new Valor(
+  "Generosidad",
+  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "Compartamos con amabilidad y de manera desinteresada con nuestros seres queridos."
+);
+
+const amor = new Valor(
+  "Amor",
+  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "Anhelemos la compañía, alegrémonos de los éxitos y compartamos los malos momentos de nuestros seres amados."
+);
+
+const justicia = new Valor(
+  "Justicia",
+  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "Todos tenemos derechos y deberes, si nos aseguramos de cumplirlos la convivencia no será un problema."
+);
+
+const responsabilidad = new Valor(
+  "Responsabilidad",
+  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "Debemos ser capaces de asumir las consecuencias de nuestras acciones y decisiones, buscando el bien común de nuestra familia."
+);
+
+const gratitud = new Valor(
+  "Gratitud",
+  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "Sintamos alegría incluso en con los detalles más pequeños, disfrutemos de las experiencias, momentos y seres amados en la vida."
+);
+
+const paciencia = new Valor(
+  "Paciencia",
+  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "Debemos saber esperar cuando deseamos algo o tenemos expectativas de los demás. No todos van al mismo ritmo."
+);
+
+const compasion = new Valor(
+  "Compasión",
+  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "Seamos empáticos en los momentos malos de nuestra familia, comprendámoslos con ternura y amor. No siempre se tienen buenos días."
+);
+
+const perdon = new Valor(
+  "Perdón",
+  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "Decidir no guardar rencores ni remordimientos con tus seres queridos es uno de los más puros actos de amor y aceptación."
+);
+
+const bondad = new Valor(
+  "Bondad",
+  "https://cdn-icons-png.flaticon.com/512/5521/5521365.png",
+  "Estemos dispuestos permanentemente a hacer el bien, de manera amable y generosa."
+);
+
+//Variables
+let btnBack = document.querySelector(".btn");
+let visibleBg = document.querySelector(".cont-modal");
+let showWin = document.querySelector(".win");
+let tarjeton = document.querySelector(".container");
+let txtCont = document.querySelector(".text-container");
+
+let valorCont = document.querySelector(".valor-familiar");
+let closeBtn = document.querySelector(".closeBtn");
+let titulo = document.querySelector(".titulo");
+let img = document.querySelector(".img-cont");
+let text = document.querySelector(".text-cont");
+
+let valoresMostrados = 0;
+
+const valores = [
+  respeto,
+  generosidad,
+  amor,
+  justicia,
+  responsabilidad,
+  gratitud,
+  paciencia,
+  compasion,
+  perdon,
+  bondad,
+];
+
+//funcion MostrarValor
+function mostrarValor(valor) {
+  titulo.innerHTML = `<p>${valor.titulo}</p>`;
+  img.innerHTML = `<img src="${valor.img}" alt="" />`;
+  text.innerHTML = `<p>${valor.descripcion}</p>`;
+}
+
+function limpiarValor() {
+  titulo.innerHTML = "";
+  img.innerHTML = "";
+  text.innerHTML = "";
+}
+
+let indiceAleatorio;
+
+//---------------------------------------------------------------------------------
+
 const table = document.querySelector("#tblBingo");
 const letter = document.querySelectorAll(".letter-bingo");
 
@@ -69,12 +184,6 @@ cell.forEach((e) => {
     if (matchWin()) {
       letter[winningIterator].classList.add("show-bingo");
 
-      let btnBack = document.querySelector(".btn");
-      let visibleBg = document.querySelector(".cont-modal");
-      let showWin = document.querySelector(".win");
-      let tarjeton = document.querySelector(".container");
-      let txtCont = document.querySelector(".text-container");
-
       setTimeout(() => {
         winningIterator++;
         if (winningIterator === 5) {
@@ -118,6 +227,43 @@ function matchWin() {
       let indexWin = winningPositions.indexOf(combination);
       winningPositions.splice(indexWin, 1);
       document.querySelector("#complete").play();
+      valoresMostrados++;
+
+      if (valoresMostrados != 5) {
+        setTimeout(() => {
+          indiceAleatorio = Math.floor(Math.random() * 9 + 1);
+          mostrarValor(valores[indiceAleatorio]);
+          visibleBg.style.visibility = "visible";
+          valorCont.classList.add("show-valor");
+        }, 500);
+
+        window.addEventListener("click", function (e) {
+          // console.log(e.target);
+          if (e.target == visibleBg || e.target == valorCont) {
+            setTimeout(() => {
+              visibleBg.style.visibility = "hidden";
+              valorCont.classList.remove("show-valor");
+              indiceAleatorio = 0;
+              limpiarValor();
+            }, 600);
+          }
+        });
+      } else {
+        visibleBg.style.visibility = "visible";
+        valorCont.classList.remove("show-valor");
+        indiceAleatorio = 0;
+        window.removeEventListener("click", function (e) {
+          if (e.target == visibleBg) {
+            setTimeout(() => {
+              visibleBg.style.visibility = "hidden";
+              valorCont.classList.remove("show-valor");
+              indiceAleatorio = 0;
+              limpiarValor();
+            }, 300);
+          }
+        });
+        limpiarValor();
+      }
     }
 
     return combination.every((index) => {

@@ -4,6 +4,8 @@ body {
 
 .choice-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 0.8rem;
   padding: 0.3rem;
   width: 100%;
@@ -82,16 +84,22 @@ body {
 
 @media screen and (max-width: 1300px) {
   .choice-container {
-    width: 40rem;
+    width: 20rem;
+    min-width: 19rem;
+    font-size: 1.2rem;
     min-width: 30rem;
     align-self: center;
   }
 
+  .choice-prefix {
+    font-size: 2rem;
+  }
+
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   #progressBar {
-    width: 15rem;
+    width: 14rem;
   }
 }

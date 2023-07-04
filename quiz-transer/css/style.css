@@ -29,6 +29,17 @@
   padding: 2rem;
 }
 
+.container-end {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 5%;
+  padding: 2rem;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -150,6 +161,7 @@
   height: auto;
   position: absolute;
   bottom: 0;
+  left: 0;
 }
 
 .bolivar {
@@ -166,6 +178,7 @@
   height: auto;
   position: absolute;
   bottom: 0;
+  right: 0;
 }
 
 /* End Page CSS */
@@ -175,6 +188,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   max-width: 30rem;
 }
 
@@ -182,7 +196,7 @@ input {
   margin-bottom: 2.5rem;
   width: 90%;
   padding: 1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   box-shadow: -0.6rem 0.6rem 0 var(--greytransp);
   border-radius: 2rem;
   border: none;
@@ -190,6 +204,14 @@ input {
 
 input::placeholder {
   color: var(--grey);
+  text-align: center;
+}
+
+#date {
+  display: none;
+  margin-bottom: 2rem;
+  width: 100%;
+  outline: none;
   text-align: center;
 }
 
@@ -201,6 +223,13 @@ input::placeholder {
 }
 
 #lastname {
+  margin-bottom: 2rem;
+  width: 100%;
+  outline: none;
+  text-align: center;
+}
+
+#cc {
   margin-bottom: 2rem;
   width: 100%;
   outline: none;
@@ -243,15 +272,32 @@ input::placeholder {
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 600px) {
+@media (orientation: portrait) and (max-width: 600px) {
   .header {
     width: 98%;
   }
-  .footer {
-    width: 100%;
+
+  .container {
+    width: 98vw;
+    height: 100vh;
   }
-  .footer img {
+
+  .img-index img {
     width: 20rem;
-    align-self: baseline;
+    height: auto;
+  }
+
+  .prudencio {
+    width: 50%;
+  }
+  .prudencio img {
+    width: 8rem;
+  }
+
+  .bolivar {
+    width: 50%;
+  }
+  .bolivar img {
+    width: 15rem;
   }
 }

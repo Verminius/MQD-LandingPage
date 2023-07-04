@@ -92,3 +92,12 @@
   transform: scale(0.95);
   box-shadow: 0 0 0 var(--greytransp);
 }
+
+@media (orientation: portrait) and (max-width: 600px) {
+  .high-score {
+    font-size: 1.5rem;
+    font-family: "GothamBook", sans-serif;
+    margin-bottom: 0.8rem;
+    text-shadow: none;
+  }
+}

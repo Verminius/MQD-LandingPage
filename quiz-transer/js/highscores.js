@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     scores.forEach((score) => {
       html += `
           <ul class="score-item">  
-              <h2 class="high-score">${score.name} ${score.lastname} - ${score.score}.</h2>
+              <h2 class="high-score">${score.score} - ${score.name} ${score.lastname}.</h2>
           </ul>
           `;
     });

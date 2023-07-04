@@ -3,7 +3,7 @@ const questions = [
     question:
       "¿Qué consecuencias puede tener el uso del celular mientras se conduce?",
     choice1: "Aumentar la atención del conductor.",
-    choice2: "Reducir de la capacidad de reacción.",
+    choice2: "Aumenta la probabilidad de tener un accidente de transito.",
     choice3: "Disminuir el riesgo de accidentes.",
     choice4: "Disminuir el estrés del conductor.",
     answer: 2,
@@ -18,7 +18,7 @@ const questions = [
   },
   {
     question:
-      "¿Cuál es el límite de velocidad en Colombia para conducir seguro en carretera?",
+      "¿Cuál es el límite de velocidad en TRANSER para conducir seguro en carretera?",
     choice1: "50 km/h.",
     choice2: "62 km/h.",
     choice3: "38 km/h.",
@@ -37,8 +37,10 @@ const questions = [
     question:
       "¿Al conducir a alta velocidad y frenar de repente, el vehículo se detiene inmediatamente?",
     choice1: "Si, se detiene sin mayor inconveniente.",
-    choice2: "No, frena varios metros más adelante.",
-    choice3: "No, hay riesgo de que el vehículo termine perdiendo el control.",
+    choice2:
+      "No, se calcula que en 15 segundos un auto puede avanzar unos 200 metros a una velocidad de 50Km/h.",
+    choice3:
+      "Existe alta probabilidad de que el vehículo termine perdiendo el control.",
     choice4: "B y C son correctas.",
     answer: 4,
   },
@@ -48,7 +50,8 @@ const questions = [
     choice1: "Conducir sin descanso durante largos periodos de tiempo.",
     choice2: "No realizar pausas ni estiramientos.",
     choice3: "Viajar solo, sin un compañero.",
-    choice4: "Dormir 8 horas al día y realizar ejercicios moderados.",
+    choice4:
+      "Descansos reparadores, realizar pausas activas, hidratarse y llevar una alimentación saludable.",
     answer: 4,
   },
   {
@@ -56,7 +59,7 @@ const questions = [
       "¿Por qué es importante realizar una revisión preoperacional del vehículo antes de emprender un viaje?",
     choice1: "Para evitar recibir una multa.",
     choice2:
-      "Para evitar accidentes por una falla mecánica y garantizar la seguridad.",
+      "Permite identificar cualquier problema o mal funcionamiento del vehículo.",
     choice3: "No es necesario hacer una revisión.",
     choice4: "Para ahorrar tiempo.",
     answer: 2,
@@ -65,7 +68,8 @@ const questions = [
     question: "¿Qué aspectos se deben revisar en la inspección preoperacional?",
     choice1: "Niveles de aceite y agua solamente.",
     choice2: "Solo los frenos y neumáticos.",
-    choice3: "Luces, frenos, neumáticos, dirección, entre otros.",
+    choice3:
+      "Verificar los principales sistemas del vehículo y revisar el estado de los EPP, kit de carretera y kit de derrames.",
     choice4: "Solo el nivel de combustible.",
     answer: 3,
   },
@@ -85,7 +89,7 @@ const questions = [
     choice2: "Consumir alimentos ricos en grasas y condimentos picantes.",
     choice3: "Beber alcohol con moderación.",
     choice4:
-      "Comer en la medida justa y optar por una dieta ligera basada en hidratos de carbono y proteínas.",
+      "Comer en la medida justa y optar por una dieta ligera basada en hidratos de carbono, proteínas y verduras.",
     answer: 4,
   },
   {
@@ -95,16 +99,17 @@ const questions = [
       "Permanecer sentado frente a la televisión durante largos períodos de tiempo.",
     choice2: "Realizar actividades físicas de alta intensidad.",
     choice3:
-      "Integrar la actividad física en la rutina diaria y sumar periodos de 10 minutos de actividad.",
+      "Integrar la actividad física en el tiempo libre, caminar recorridos cortos, utilizar escaleras.",
     choice4: "Evitar cualquier tipo de ejercicio físico.",
     answer: 3,
   },
   {
     question:
-      "¿Cuál de las siguientes opciones considera, son efectos de conducir en estado de embriaguez?",
+      "¿Qué efectos genera el consumo de alcohol y sustancias psicoactivas?",
     choice1: "Aumento de la atención y los reflejos.",
     choice2: "Mejora de la coordinación y la fuerza muscular.",
-    choice3: "Disminución de la capacidad de tomar decisiones racionales.",
+    choice3:
+      "Deteriora la visión, los reflejos y disminuye la capacidad de discernimiento.",
     choice4: "Reducción de la ansiedad y la depresión.",
     answer: 3,
   },
