@@ -100,7 +100,7 @@ const valores = [
 function mostrarValor(valor) {
   titulo.innerHTML = `<p>${valor.titulo}</p>`;
   img.innerHTML = `<img src="${valor.img}" alt="" />`;
-  text.innerHTML = `<p>${valor.descripcion}</p>`;
+  text.innerHTML = `<p>${valor.descripcion} <br><br> Danos un ejemplo de como practícas este valor con tu familia</p>`;
 }
 
 function limpiarValor() {
