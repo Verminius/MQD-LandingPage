@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bienestar Quiz | Final</title>
     <link rel="stylesheet" href="/quiz-bolivar/css/style.css" />
-</head>
+  </head>
 
-<body>
-    
+  <body>
     <!-- HEADER -->
 
     <div class="cont-header"></div>
 
     <!-- GAME -->
     <div class="container">
-        <div id="end" class="flex-center flex-column">
-            <form class="end-form-container" id="task-form">
-                <h2 id="end-text">¡Tu Puntaje Final!</h2>
-                <input id="finalScore"></input>
-                <h2 id="end-text">
-                    Escribe tu nombre completo para guardar tu puntaje
-                </h2>
-                <input id="username" placeholder="Nombre" />
-                <input id="lastname" placeholder="Apellido" />
-                <button class="btn" id="saveScoreBtn">Guardar</button>
-            </form>
-            
-        </div>
+      <div id="end" class="flex-center flex-column">
+        <h2 id="end-text">¡Tu Puntaje Final!</h2>
+        <h1 id="finalScore">0</h1>
+        <form class="end-form-container">
+          <h2 id="end-text">Escribe tu nombre para guardar tu puntaje</h2>
+          <input
+            type="text"
+            name="name"
+            id="username"
+            placeholder="Ingresa tu nombre"
+          />
+          <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Ingresa tu apellido"
+          />
+          <button
+            class="btn"
+            type="submit"
+            onclick="saveHighScore(event)"
+            id="saveScoreBtn"
+            disabled
+          >
+            Guardar
+          </button>
+        </form>
+        <a href="/quiz-bolivar/juego.html" class="btn">Reiniciar</a>
+      </div>
     </div>
 
     <!-- FOOTER -->
     <div class="cont-footer">
-        <div class="footer">
-            <div class="logo bolivar"><img src="/quiz-bolivar/img/bolivar.png" alt="" /></div>
+      <div class="footer">
+        <div class="logo bolivar">
+          <img src="/quiz-bolivar/img/bolivar.png" alt="" />
         </div>
+      </div>
     </div>
 
     <!-- SCRIPT -->
-    <script type="module" src="/quiz-bolivar/js/end.js"></script>
-</body>
-
+    <script src="/quiz-bolivar/js/end.js"></script>
+  </body>
 </html>

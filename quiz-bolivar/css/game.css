@@ -2,10 +2,25 @@ body {
   color: var(--white);
 }
 
+#juego {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question-container {
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+}
+
 .choice-container {
   display: flex;
   margin-bottom: 0.8rem;
-  width: 100%;
+  width: 80%;
   border-radius: 30px;
   background: var(--white);
   font-size: 1.3rem;
@@ -24,6 +39,7 @@ body {
   padding: 1rem 2rem;
   color: var(--red);
   font-weight: 700;
+  align-self: center;
 }
 
 .choice-text {
@@ -43,6 +59,7 @@ body {
 /* Header-HUD */
 
 #hud {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -75,7 +92,7 @@ body {
 
 @media screen and (max-width: 1300px) {
   .choice-container {
-    width: 350px;
+    width: 390px;
     min-width: 15rem;
     align-self: center;
   }

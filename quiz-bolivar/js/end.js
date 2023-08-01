@@ -1,36 +1,36 @@
-import { saveTask } from "./firebase.js";
-
-const mostRecentScore = localStorage.getItem("mostRecentScore");
-const finalScore = document.querySelector("#finalScore");
-
-finalScore.value = mostRecentScore;
-
 const username = document.querySelector("#username");
 const lastname = document.querySelector("#lastname");
 const saveScoreBtn = document.querySelector("#saveScoreBtn");
+const finalScore = document.querySelector("#finalScore");
+const mostRecentScore = localStorage.getItem("mostRecentScore");
+
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+
+const MAX_HIGH_SCORES = 20;
+
+finalScore.innerText = mostRecentScore;
 
 username.addEventListener("keyup", () => {
-  saveScoreBtn.disabled = !username.value && !lastname.value;
+  saveScoreBtn.disabled = !username.value;
 });
 
-function saveScore() {
-  const taskForm = document.getElementById("task-form");
+saveHighScore = (e) => {
+  e.preventDefault();
 
-  taskForm.addEventListener("submit", (e) => {
-    e.preventDefault();
+  const score = {
+    puntaje: mostRecentScore,
+    nombre: username.value,
+    apellido: lastname.value,
+  };
 
-    const name = taskForm["username"];
-    const score = taskForm["finalScore"];
-    const lName = taskForm["lastname"];
+  highScores.push(score);
 
-    saveTask(name.value, lName.value, score.value);
-
-    taskForm.reset();
-
-    setTimeout(() => {
-      location.assign("/quiz-bolivar/index.html");
-    }, 1500);
+  highScores.sort((a, b) => {
+    return b.score - a.scores;
   });
-}
 
-saveScoreBtn.addEventListener("click", saveScore());
+  highScores.splice(20);
+
+  localStorage.setItem("highScores", JSON.stringify(highScores));
+  window.location.assign("/quiz-bolivar/index.html");
+};

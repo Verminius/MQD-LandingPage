@@ -1,28 +1,10 @@
-import { getTask, onGetTask } from "./firebase.js";
-
 const highScoresList = document.getElementById("highScoresList");
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-window.addEventListener("DOMContentLoaded", async () => {
-  onGetTask((querySnapshot) => {
-    let scores = [];
+highScores.sort((a, b) => b.puntaje - a.puntaje);
 
-    querySnapshot.forEach((doc) => {
-      const score = doc.data();
-      scores.push(score);
-    });
-
-    scores.sort((a, b) => b.score - a.score);
-
-    let html = "";
-
-    scores.forEach((score) => {
-      html += `
-          <ul class="score-item">  
-              <h2 class="high-score">${score.name} ${score.lastname} - ${score.score}.</h2>
-          </ul>
-          `;
-    });
-
-    highScoresList.innerHTML = html;
-  });
-});
+highScoresList.innerHTML = highScores
+  .map((score) => {
+    return `<li class="high-score">${score.nombre} ${score.apellido} - ${score.puntaje}</li>`;
+  })
+  .join("");
