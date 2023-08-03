@@ -52,7 +52,6 @@ choices.forEach((choice) => {
     acceptingAnswers = false;
     const selectedChoice = e.target;
     const selectedAnswer = selectedChoice.dataset["number"];
-
     let classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
@@ -60,15 +59,36 @@ choices.forEach((choice) => {
       incrementScore(SCORE_POINTS);
       document.querySelector("#correct").play();
     } else {
+      choices[currentQuestion.answer - 1].parentElement.classList.add(
+        "correct"
+      );
+      choices[currentQuestion.answer - 1].parentElement.classList.add(
+        "correct"
+      );
+      choices[currentQuestion.answer - 1].parentElement.classList.add(
+        "correct"
+      );
+
       document.querySelector("#wrong").play();
     }
 
     selectedChoice.parentElement.classList.add(classToApply);
 
     setTimeout(() => {
+      choices[currentQuestion.answer - 1].parentElement.classList.remove(
+        "correct"
+      );
+      choices[currentQuestion.answer - 1].parentElement.classList.remove(
+        "correct"
+      );
+      choices[currentQuestion.answer - 1].parentElement.classList.remove(
+        "correct"
+      );
+
       selectedChoice.parentElement.classList.remove(classToApply);
+
       getNewQuestions();
-    }, 800);
+    }, 2000);
   });
 });
 
