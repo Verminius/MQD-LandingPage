@@ -966,7 +966,7 @@ const questions = [
     choice1: "Carne roja",
     choice2: "Pollo",
     choice3: "Pescado",
-    choice4: "Pescado",
+    choice4: "Cerdo",
     answer: 3,
   },
   {
@@ -974,7 +974,7 @@ const questions = [
     choice1: "Comer alimentos procesados",
     choice2: "Hacer ejercicio regularmente",
     choice3: "Saltarse las comidas",
-    choice4: "Hacer ejercicio regularmente",
+    choice4: "No hacer ejercicio regularmente",
     answer: 2,
   },
   {
@@ -983,7 +983,7 @@ const questions = [
     choice1: "Azúcares refinados",
     choice2: "Frutas y verduras",
     choice3: "Papas fritas",
-    choice4: "Frutas y verduras",
+    choice4: "Arroz y dulces",
     answer: 2,
   },
   {
