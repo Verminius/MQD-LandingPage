@@ -106,7 +106,7 @@ const questions = [
     question:
       "¿Cuántas horas de actividad física se recomienda hacer a la semana para mantener un estilo de vida saludable?",
     choice1: "1-2 horas",
-    choice2: "1-2 horas",
+    choice2: "3-4 horas",
     choice3: "5 horas o más",
     choice4: "12-26 horas",
     answer: 3,
@@ -992,7 +992,7 @@ const questions = [
     choice1: "Comer muchos alimentos fritos",
     choice2: "Comer más frutas y verduras",
     choice3: "No hacer nada",
-    choice4: "Comer más frutas y verduras",
+    choice4: "Comer más huevos y carnes rojas",
     answer: 2,
   },
   {
