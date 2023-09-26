@@ -242,7 +242,7 @@ const questions = [
     choice1: "30 segundos",
     choice2: "1 minuto",
     choice3: "2 minutos",
-    choice4: "60minutos",
+    choice4: "60 minutos",
     answer: 3,
   },
   {
